@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redeem</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <link rel="stylesheet" href="./css/css-reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="main-container rewards">
+        <div class="form-header white-header">
+            <a href="#">
+                <img class="logo" src="./img/logo.png" alt="">
+            </a>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle header-dropdown" type="button" id="triggerId"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-user-circle"></i>
+                    <div class="account">Account</div>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="triggerId">
+                    <a class="dropdown-item" href="account-setting.html"><img src="./img/Icon_settings.png" alt=""> Settings</a>
+                    <a class="dropdown-item" href="#"><img src="./img/Icon_exit.png" alt=""> LOG OUT</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Redeem Menu -->
+        <div class="redeem-menu">
+            <div class="balance-card redeem-card">
+                <div class="balance-card-heading">Balance</div>
+                <div class="money">$4</div>
+            </div>
+            <div class="redeem-main-heading">Withdrawal Options</div>
+
+            <!-- Collapse -->
+            <div class="redeem-collapse">
+                <div class="custom-collapse">
+                    <button class="accordion">
+                        <div>
+                            <img class="img-fluid" src="./img/airtime-img.png" alt=""><span class="airtime">Airtime</span>
+                        </div>
+                        <div>
+                            <i class="fas fa-chevron-down"></i></div>
+                    </button>
+                    <div class="panel">
+                        <p class="redeem-collapse-text">
+                            Upon redemption, your airtime can take
+                            up to 2-weeks to be processed.
+                        </p>
+                        <p class="redeem-collapse-text">
+                            IMPORTANT! We can only process airtime
+                            for prepaid and top-up contracts.
+                        </p>
+                        <p class="redeem-collapse-text">
+                            If you are on a contract that does not
+                            permit top-up, please redeem an
+                            alternative reward option i.e. GCodes or
+                            PayPal. Airtime will be paid in Rands at a
+                            fixed conversion rate of 17,5:1
+                        </p>
+                        <div class="collapse-btn">
+                            <a class="link-btn" href="#">withdraw</a>
+                            <div class="withdrawal-amount">Minimum withdrawal amount is $4*</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="custom-collapse">
+                    <button class="accordion">
+                        <div>
+                            <img class="img-fluid" src="./img/paypal-img.png" alt="">
+                        </div>
+                        <div>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </button>
+                    <div class="panel">
+                        <p class="redeem-collapse-text">
+                            Your money will be transferred to your
+                            online account at PayPal within 1 to 4
+                            business days.
+                        </p>
+                        <p class="redeem-collapse-text">
+                            To complete the transaction, you need to
+                            approve it in your PayPal account within
+                            30 days.
+                        </p>
+                        <p class="redeem-collapse-text">
+                            If you do not have an account with
+                            PayPal, please register for an account at <br>
+                            <a class="collapse-link" href="#">www.paypal.com</a>
+                        </p>
+                        <p class="redeem-collapse-text">
+                            Note that this account needs to be
+                            registered to the same e-mail address
+                            as in the panel. PayPal charges a 2%
+                            handling fee for transferring money to
+                            your PayPal.
+                        </p>
+                        <a class="collapse-link" href="#">https://www.paypal.com/za/webapps/
+                            mpp/home</a>
+                        <div class="collapse-btn disable">
+                            <a class="link-btn" href="#">withdraw</a>
+                            <div class="withdrawal-amount">Minimum withdrawal amount is $4*</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="custom-collapse">
+                    <button class="accordion">
+                        <div>
+                            <img class="img-fluid" src="./img/gcodes-img.png" alt="">
+                        </div>
+                        <div>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </button>
+                    <div class="panel">
+                        <p class="redeem-collapse-text">
+                            GCodes virtual gift codes are
+                            redeemable for thousands of rewards
+                            including merchandise, gift cards, digital
+                            magazines and books, travel, event
+                            tickets, mobile top-up and more!
+                        </p>
+                        <p class="redeem-collapse-text">
+                            Your GCodes virtual gift code will be sent
+                            directly to your e-mail address normally
+                            within 1 to 4 business days.
+                        </p>
+                        <p class="redeem-collapse-text">
+                            Visit <a class="collapse-link" href="#">app.g.codes</a> and create an account
+                            to learn more.
+                        </p>
+                        <div class="collapse-btn">
+                            <a class="link-btn" href="#">withdraw</a>
+                            <div class="withdrawal-amount">Minimum withdrawal amount is $4*</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="footer-links-media">
+            <a class="social-link" href="surverys.html"><img src="./img/surveys.png" alt=""><br> Surveys</a>
+            <a class="social-link active" href="rewards.html"><img src="./img/rewards.png" alt=""><br> Rewards</a>
+            <a class="social-link" href="profile2.html"><img src="./img/profile.png" alt=""><br> Profile</a>
+            <a class="social-link" href="#"><img src="./img/help.png" alt=""><br> Help</a>
+        </div>
+
+        <!-- Bg Images -->
+        <img class="img-fluid left-side-bg" src="./img/left-side-bg.png" alt="">
+        <img class="img-fluid right-side-bg" src="./img/right-side-bg.png" alt="">
+    </div>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/rewards.js"></script>
+</body>
+
+</html>

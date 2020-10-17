@@ -1,0 +1,1521 @@
+:root {
+    --secondary-color: #8C8C8C;
+    --primary-color: #707070;
+    --theme-color: #D99400;
+}
+
+body {
+    font-size: 1em;
+    font-family: 'Segoe UI';
+    background-color: lightgray;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+/* Requirement Form */
+.main-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 1em 2em 3em 2em;
+    text-align: center;
+    position: relative;
+    background-color: white;
+    overflow-y: hidden;
+}
+
+/* Form Header */
+.form-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+
+.logo {
+    height: 40px;
+    margin-left: 0.5em;
+}
+
+.form-header .form-header-link {
+    color: var(--theme-color);
+    font-weight: 500;
+    margin-top: 0.6em;
+}
+
+.form-header .sm-text {
+    font-size: 0.7em;
+}
+
+.gray-text {
+    color: var(--primary-color);
+}
+
+/* Multi Form */
+.multistep-form:not(#step-1) {
+    display: none;
+}
+
+.multistep-form {
+    margin-top: 2em;
+    z-index: 1;
+    position: relative;
+}
+
+.main-heading {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
+.multistep-form .multi-steps .number {
+    color: var(--secondary-color);
+    font-size: 0.9em;
+    border: 2px solid var(--secondary-color);
+    display: inline-block;
+    height: 1.5em;
+    width: 1.5em;
+    line-height: 1.2;
+    font-weight: 500;
+    border-radius: 50%;
+
+}
+
+.multistep-form .multi-steps {
+    display: flex;
+    align-items: center;
+    width: 65%;
+    margin: auto;
+}
+
+.multistep-form .multi-steps .line {
+    background-color: var(--secondary-color);
+    display: inline-block;
+    height: 2px;
+    width: 20%;
+}
+
+.multi-steps .number.current {
+    border: 2px solid var(--theme-color);
+}
+
+.multi-steps .line.current {
+    background-color: var(--theme-color);
+}
+
+.multi-steps .number.done {
+    background-color: var(--theme-color);
+    color: white;
+    border: none;
+    line-height: 1.4;
+}
+
+.main-text {
+    color: var(--primary-color);
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+/* Control Parent */
+.control-parent {
+    position: relative;
+    margin-bottom: 1.2em;
+}
+
+.error {
+    color: var(--theme-color);
+    font-size: 0.9em;
+    font-weight: 600;
+    text-align: left;
+    padding-left: 1em;
+    padding-bottom: 0.9em;
+    display: none;
+}
+
+.password-error-2 {
+    display: none;
+}
+
+.calendar-input.control-parent .lbl {
+    position: absolute;
+    top: -8px;
+    left: 10px;
+}
+
+.lbl.lbl-two {
+    margin-left: 5em;
+}
+
+.control-parent .lbl {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    pointer-events: none;
+    background: white;
+    transition: 200ms all ease;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.control-parent .control {
+    width: 100%;
+    padding: 12px 12px 12px 20px;
+    border-radius: 8px;
+    border: 1px solid var(--secondary-color);
+    outline: none;
+    color: black;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.control-parent .control:focus {
+    border: 2px solid var(--theme-color) !important;
+}
+
+.main-text.password-text {
+    font-size: 0.8em;
+    margin-top: 2.7em;
+    margin-bottom: 1.4em;
+    text-align: start;
+}
+
+.control-parent.password-input {
+    position: relative;
+}
+
+.control-parent.control-parent.password-input .password-img {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    cursor: pointer;
+}
+
+.multistep-form .form-btn {
+    color: white;
+    background-color: var(--theme-color);
+    padding: 1em 3em;
+    border: none;
+    border-radius: 30px;
+    margin-top: 2.3em;
+    cursor: pointer;
+    outline: none;
+    font-weight: 500;
+}
+
+/* Footer */
+.footer-links {
+    position: relative;
+    z-index: 1;
+    margin-top: 2.6em;
+}
+
+.footer-links a {
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 0.7em;
+}
+
+.footer-links span {
+    background-color: var(--secondary-color);
+    width: 2px;
+    height: 0.6em;
+    display: inline-block;
+}
+
+.copy-right {
+    margin-top: 0.8em;
+    color: var(--theme-color);
+    font-weight: 500;
+}
+
+/* Step 2 */
+.resend-btn {
+    color: var(--primary-color);
+    font-weight: 500;
+    display: block;
+    margin-top: 1.5em;
+    margin-bottom: 18em;
+}
+
+/* Step 3 */
+.control-parent select.control {
+    -webkit-appearance: none;
+    background-image: url("../img/down-img.png");
+    background-position: 96%;
+    background-repeat: no-repeat;
+    background-size: 5%;
+    padding: 0.9em;
+}
+
+#step-3 #date-lbl {
+    top: -8px !important;
+    left: 9px !important;
+}
+
+/* Step 4 */
+#step-4 .control-parent {
+    border: 1px solid var(--secondary-color);
+    padding: 12px;
+    border-radius: 8px;
+}
+
+#step-4 .colord {
+    color: var(--theme-color);
+}
+
+.page-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4;
+    color: var(--secondary-color);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: left;
+}
+
+.page-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.page-container .checkmark.checkmark-2 {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border: 2px solid var(--secondary-color);
+    background-color: white;
+    border-radius: 0;
+}
+
+.page-container:hover input~.checkmark.checkmark-2 {
+    background-color: white;
+}
+
+.page-container input:checked~.checkmark.checkmark-2 {
+    background-color: var(--theme-color);
+    border-color: var(--theme-color);
+}
+
+.checkmark.checkmark-2:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.page-container input:checked~.checkmark.checkmark-2:after {
+    display: block;
+}
+
+.page-container .checkmark.checkmark-2:after {
+    left: 4px;
+    top: -1px;
+    width: 8px;
+    height: 14px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* Step 5 */
+.earn {
+    color: var(--theme-color);
+    font-size: 2.3em;
+    font-weight: 600;
+    margin: 1em 0;
+}
+
+.multistep-form .closed-step-btn {
+    color: #4C4C4C;
+    text-decoration: none;
+    position: absolute;
+    top: -45px;
+    display: inline-block;
+    right: 0;
+    font-size: 1.1em;
+}
+
+/* Bg img */
+.bg-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bg-right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+/* Step 3,4 modal location-modal */
+.location-modal {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    padding: 0 2.5em;
+    backdrop-filter: blur(4px);
+}
+
+.location {
+    background-color: white;
+    border-radius: 18px;
+    padding: 2em 1.4em 2.8em 1.4em;
+    box-shadow: 0px 0px 7px -5px;
+}
+
+.location-modal-btn {
+    color: white !important;
+    background-color: var(--theme-color);
+    padding: 0.6em 2.5em;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.location-modal-btn.block {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.map-text {
+    font-size: 0.8em;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.closed-btn {
+    color: black;
+    vertical-align: middle;
+}
+
+.location-modal-buttons {
+    margin-top: 3em;
+    text-align: center;
+}
+
+.location-text {
+    margin-top: 1.5em;
+    text-align: left;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-left: 0.2em;
+}
+
+/* Profile 1 */
+.main-container.profile1-step .porfile1-footer-link {
+    color: var(--theme-color);
+    font-size: 0.9em;
+    display: inline-block;
+    margin-bottom: 0.7em;
+    margin-top: 1.2em;
+    font-weight: 500;
+}
+
+#step-12.multistep-form {
+    margin-top: 0;
+}
+
+#step-12 .brand-logo {
+    display: block;
+    text-align: start;
+}
+
+#step-12.multistep-form .closed-step-btn {
+    top: 45px;
+}
+
+.main-container.profile1-step .report-link {
+    display: inline-block;
+    margin-bottom: 5em;
+    color: var(--primary-color);
+    font-size: 0.7em;
+    font-weight: 500;
+}
+
+.or-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2.6em 0;
+}
+
+.or-line .line {
+    background-color: var(--primary-color);
+    height: 1px;
+    width: 4.5em;
+}
+
+.or-line .or {
+    color: var(--primary-color);
+    font-weight: 500;
+    margin: 0em 0.8em;
+}
+
+.q-text {
+    color: black;
+    font-weight: 500;
+    margin-bottom: 3.2em;
+    line-height: 1.3;
+}
+
+.profile-steps {
+    border: 1px solid var(--secondary-color);
+    border-radius: 0.6em;
+    padding: 1.8em;
+}
+
+.custom-progress {
+    height: 0.6em;
+    background-color: #e9ecef;
+    border-radius: 0.5em;
+    width: calc(100% - 2.5em);
+}
+
+.custom-progress .progress-level {
+    background-color: var(--theme-color);
+    border-radius: 0.5em;
+    height: 0.6em;
+    width: 10%;
+}
+
+.progress-steps {
+    color: var(--primary-color);
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.steps-progress {
+    display: flex;
+    margin: 2.2em 0;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Custom Radio Button start */
+.custom-container {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.custom-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.custom-container .checkmark {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid var(--primary-color);
+}
+
+.custom-container:hover input~.checkmark {
+    background-color: #e9ecef;
+}
+
+.custom-container input:checked~.checkmark {
+    background-color: white;
+    border-color: var(--theme-color);
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.custom-container input:checked~.checkmark:after {
+    display: block;
+}
+
+.custom-container .checkmark:after {
+    top: 2px;
+    left: 2px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--theme-color)
+}
+
+/* Custom Radio Button end */
+.steps-radio-button {
+    display: flex;
+}
+
+.steps-radio-button.steps-radio-button-inline {
+    display: block;
+}
+
+.radio-text {
+    color: var(--primary-color);
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 1em;
+}
+
+.profile-steps .error {
+    padding-left: 0;
+}
+
+.radio-box {
+    margin-bottom: 2.2em;
+}
+
+.profile-steps>.radio-box:last-child {
+    margin-bottom: 0;
+}
+
+.steps-radio-button.steps-radio-button-inline {
+    text-align: left;
+}
+
+.steps-radio-button.steps-radio-button-inline .custom-container {
+    margin-bottom: 1.8em;
+}
+
+.steps-radio-button.steps-radio-button-inline>.custom-container:last-child {
+    margin-bottom: 0;
+}
+
+
+/* Profile 2*/
+.main-container .page-medal {
+    padding-top: 8em;
+    padding-bottom: 5em;
+    position: relative;
+    z-index: 1;
+}
+
+.main-container .page-medal .main-heading {
+    color: var(--primary-color);
+}
+
+.answer.blue-color {
+    color: #15317E !important;
+}
+
+.answer.hide-answer {
+    display: none;
+}
+
+.page-cards {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 2em;
+}
+
+.page-cards .page-card-text {
+    font-size: 0.9em;
+    color: black;
+}
+
+.page-card {
+    position: relative;
+}
+
+.page-card .notification {
+    position: absolute;
+    right: 0;
+    line-height: 1.1;
+    top: -10px;
+}
+
+.notification {
+    background-color: #15317E;
+    display: inline-block;
+    height: 1.2em;
+    width: 1.2em;
+    font-weight: 500;
+    border-radius: 50%;
+    color: white;
+    font-size: 0.8em;
+}
+
+.page-card .notification.education {
+    top: -24px;
+}
+
+.bg-right.second-bg {
+    height: 75%;
+}
+
+.page-medal .main-heading.black-heading {
+    color: black;
+    margin-bottom: 2.5em;
+}
+
+.page-medal .q-text {
+    text-align: left;
+    margin-bottom: 2.2em;
+}
+
+.page-medal .page-container {
+    margin-bottom: 2em;
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.page-medal .checkmark.checkmark-2 {
+    height: 18px;
+    width: 18px;
+}
+
+.page-medal .page-container .checkmark.checkmark-2:after {
+    left: 3px;
+}
+
+.page-medal .answer {
+    text-align: left;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.page-medal .q-text.q-text-2 {
+    margin-bottom: 1em;
+    padding-right: 3em;
+}
+
+.edit {
+    float: right;
+    color: var(--theme-color) !important;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.profile-steps.edit-step {
+    background-color: #FFFCF8;
+}
+
+.social-icon {
+    display: flex;
+    align-items: end;
+}
+
+.social-icon.page-container .checkmark.checkmark-2 {
+    top: -2px;
+}
+
+.social-icon div {
+    margin-top: -6px;
+}
+
+.social-icon img {
+    margin-right: 0.4em;
+    margin-top: -4px;
+}
+
+/* Rewards */
+::-webkit-scrollbar {
+    width: 4px;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--secondary-color);
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--theme-color);
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--theme-color);
+}
+
+.rewards,
+.surverys {
+    padding: 1em 2.3em;
+    background-color: #F5F5F5;
+    position: relative;
+}
+
+.header-dropdown.dropdown-toggle::after {
+    content: unset;
+}
+
+.form-header.white-header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 0.7em 2em;
+    background-color: white;
+    box-shadow: 0px 0px 7px -5px;
+}
+
+.form-header.white-header .dropdown .btn.btn-secondary {
+    background-color: white;
+    color: #4C4C4C;
+    border: none;
+    box-shadow: none;
+    font-weight: 500;
+}
+
+.dropdown-item img {
+    vertical-align: middle;
+}
+
+.dropdown-item {
+    padding: 0.8em 1em;
+    border: none;
+    color: var(--primary-color);
+}
+
+.dropdown-menu {
+    border: none;
+    border-radius: 15px;
+}
+
+.form-header.white-header .dropdown .btn.btn-secondary i {
+    font-size: 1.5em;
+}
+
+.dropdown .account {
+    font-size: 0.9em;
+}
+
+.balance-card {
+    background-color: white;
+    box-shadow: 0px 0px 7px -5px;
+    padding: 2.3em 2em;
+    border-radius: 10px 10px 0 0;
+    margin-top: 6.2em;
+}
+
+.balance-card .balance-circle {
+    border: 7px solid #F0F2F2;
+    height: 8em;
+    width: 8em;
+    border-radius: 50%;
+    margin: 2em auto;
+}
+
+.balance-card .money {
+    font-size: 2em;
+    font-weight: 500;
+    color: #212121;
+    line-height: 3.5;
+}
+
+.balance-card .balance-card-heading {
+    font-size: 1.5em;
+    color: var(--primary-color);
+}
+
+.balance-card .balance-btn {
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+    border-radius: 30px;
+    width: 100%;
+    padding: 0.8em 0;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.balance-card.icon-card {
+    margin-top: 0;
+    border-radius: 0 0 10px 10px;
+}
+
+.balance-card.icon-card .sub-text {
+    font-weight: 700;
+    margin-bottom: 0.9em;
+}
+
+.balance-card.icon-card .sub-heading {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.balance-card.icon-card .main-text {
+    font-size: 0.8em;
+    margin: 0.9em 0;
+    line-height: 1.3;
+    color: black;
+}
+
+.balance-card.icon-card .copy-link {
+    color: var(--theme-color);
+    text-decoration: underline !important;
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+.balance-card.icon-card .copy-img {
+    vertical-align: middle;
+    margin-right: 0.2em;
+}
+
+.history-card {
+    padding: 1.5em 1.2em;
+    background-color: white;
+    box-shadow: 0px 0px 7px -5px;
+    border-radius: 10px;
+    margin-top: 1.2em;
+    margin-bottom: 5.3em
+}
+
+.history-card .history-activity {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--primary-color);
+}
+
+.history-card .history-heading {
+    font-size: 1.2em;
+}
+
+.history-card .activity-heading {
+    font-weight: 700;
+}
+
+.history-card .complete-step {
+    border-bottom: 1px solid #C6C6C6;
+    padding: 1em 0;
+}
+
+.complete-step .ratio-steps {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+.show-link {
+    color: var(--theme-color) !important;
+    text-decoration: none;
+    text-align: left;
+    font-weight: 600;
+    display: block;
+    padding: 1.3em 0;
+}
+
+.show-link.less {
+    display: none;
+}
+
+.steps-scroll>.complete-step:first-child {
+    border-top: 1px solid #C6C6C6;
+}
+
+.complete-step .levels {
+    color: var(--primary-color);
+    font-weight: 500;
+    margin-bottom: 0.5em;
+}
+
+.complete-step.hide-step {
+    display: none;
+}
+
+.complete-step .date {
+    color: var(--secondary-color);
+    font-size: 0.9em;
+}
+
+.history-card .number {
+    font-size: 1.5em;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.footer-links-media .social-link {
+    font-size: 0.9em;
+    color: var(--primary-color);
+    font-weight: 500;
+    line-height: 1.3
+}
+
+.social-link.active .notification {
+    position: absolute;
+    right: -15px;
+    top: -10px;
+}
+
+.footer-links-media .social-link.active {
+    color: var(--theme-color);
+    position: relative;
+}
+
+.footer-links-media .social-link.active img {
+    filter: invert(53%) sepia(98%) saturate(633%) hue-rotate(7deg) brightness(92%) contrast(103%);
+}
+
+.footer-links-media {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: white;
+    padding: 1em 2em;
+    box-shadow: 0px 0px 7px -5px;
+    z-index: 1;
+}
+
+.left-side-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 37px;
+}
+
+.right-side-bg {
+    right: 0;
+    position: absolute;
+    bottom: 0;
+    width: 37px;
+}
+
+.balance-card hr {
+    background-color: #C6C6C6;
+}
+
+.referrals {
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.referrals .referrals-heading {
+    font-weight: 500;
+    color: var(--primary-color);
+    font-weight: 1.1em;
+}
+
+.referrals .ref-text {
+    color: var(--secondary-color);
+    font-size: 0.9em;
+    line-height: 1.2;
+    margin-top: 0.3em;
+}
+
+.referrals .ref-number {
+    font-size: 1.5em;
+    color: #3B5999;
+    font-weight: 600;
+}
+
+.social-media-img {
+    position: relative;
+}
+
+.social-media-img .share-text {
+    color: white;
+    font-size: 1em;
+    font-weight: 700;
+    position: absolute;
+    top: 57%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+}
+
+/* Redeem */
+.redeem-menu {
+    margin-bottom: 15em;
+}
+
+.balance-card.redeem-card .money {
+    line-height: 1;
+    margin-top: 0.4em;
+}
+
+.balance-card.redeem-card {
+    border-radius: 10px;
+}
+
+.redeem-menu .redeem-main-heading {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-top: 2.5em;
+}
+
+.custom-collapse .accordion.active i {
+    transform: rotate(180deg);
+
+}
+
+.custom-collapse .accordion.active>div:nth-child(1) {
+    margin-left: auto;
+}
+
+.custom-collapse .accordion.active>div:nth-child(2) {
+    margin-left: auto;
+}
+
+.custom-collapse .accordion i {
+    color: var(--theme-color);
+}
+
+.custom-collapse .panel {
+    display: none;
+}
+
+.custom-collapse .panel.active {
+    display: block;
+}
+
+.redeem-collapse {
+    text-align: left;
+    margin-top: 1.3em;
+}
+
+.redeem-collapse .custom-collapse {
+    width: 100%;
+    background-color: white;
+    margin-bottom: 1em;
+    border-radius: 10px;
+    box-shadow: 0px 0px 7px -5px;
+}
+
+.redeem-collapse .accordion {
+    width: 100%;
+    background-color: white;
+    text-align: left;
+    padding: 1.2em 1.4em;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.redeem-collapse .airtime {
+    color: var(--theme-color);
+    font-weight: 700;
+    font-size: 1.3em;
+    vertical-align: top;
+    margin-left: 0.3em;
+}
+
+.redeem-collapse .panel {
+    padding: 1em 2em;
+}
+
+.redeem-collapse .redeem-collapse-text {
+    color: black;
+    font-size: 0.9em;
+    margin-bottom: 1em;
+    line-height: 1.4;
+}
+
+.redeem-collapse .link-btn {
+    text-transform: uppercase;
+}
+
+.redeem-collapse .collapse-btn {
+    text-align: center;
+    margin: 1em 0 2em 0;
+}
+
+.redeem-collapse .collapse-btn.disable .link-btn {
+    background-color: #9F9F9F;
+}
+
+.redeem-collapse .collapse-btn.disable .withdrawal-amount {
+    display: block;
+}
+
+.redeem-collapse .withdrawal-amount {
+    color: var(--secondary-color);
+    font-size: 0.8em;
+    font-weight: 500;
+    margin-top: 0.9em;
+    display: none;
+}
+
+.redeem-collapse .collapse-link {
+    color: #15317E;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+/* Surveys */
+.surverys {
+    padding: 1em 2.3em;
+    background-color: #F5F5F5;
+    position: relative;
+}
+
+.survey-balacne-card {
+    box-shadow: 0px 0px 7px -5px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5em;
+}
+
+.survey-balacne-card.collect-card {
+    margin: 0 2.3em;
+}
+
+.survey-main-heading {
+    color: var(--primary-color);
+    margin-bottom: 0.6em;
+    font-weight: 500;
+    font-size: 1.3em;
+}
+
+.survey-card-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.survey-balance-card {
+    color: var(--primary-color);
+    font-size: 0.8em;
+    text-align: right;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.money {
+    font-weight: 600;
+    color: var(--primary-color);
+    font-size: 1.8em;
+}
+
+.survey-balacne-card .progress {
+    height: 0.7em;
+    border-radius: 20px;
+    margin-top: 3em;
+}
+
+.survey-balacne-card .progress-bar {
+    background-color: var(--theme-color);
+    border-radius: 20px;
+}
+
+.survey-balacne-card.survey-card {
+    padding: 2em 0 0.8em 0;
+    margin-bottom: 1em;
+    cursor: pointer;
+}
+
+.survey-card img {
+    vertical-align: middle;
+}
+
+.survey-card .survey-card-child span {
+    color: #515151;
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+.survey-card .money {
+    font-size: 1.5em;
+    color: #515151;
+}
+
+.survey-id {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.survey-time {
+    color: #747474;
+    font-weight: 700;
+}
+
+.survey-card-heading {
+    color: #747474;
+    margin-top: 3em;
+    font-weight: 500;
+    padding-top: 0.8em;
+    border-top: 1px solid #E2E2E2;
+}
+
+.survey-cards-parent {
+    height: 504px;
+    overflow-y: scroll;
+    z-index: 1;
+    position: relative;
+    padding: 0 1em;
+    margin: 0 1.3em 3.2em 1.3em;
+}
+
+#survery-page-2 .survery-maintext {
+    color: black;
+    font-weight: 600;
+    margin-top: 2em;
+}
+
+#survery-page-2 .survery-subtext {
+    font-size: 0.9em;
+    color: black;
+    margin: 2em 0;
+}
+
+.link-btn {
+    color: white;
+    background-color: var(--theme-color);
+    padding: 1em 3em;
+    border: none;
+    border-radius: 30px;
+    margin-top: 2.3em;
+    cursor: pointer;
+    outline: none;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.link-btn:hover {
+    color: white;
+}
+
+#survery-page-2 .footer-links {
+    padding-bottom: 15em;
+}
+
+#survery-page-2 {
+    padding: 1em 2.3em;
+    display: none;
+}
+
+.main-container.household #step-1,
+.main-container.communication #step-1,
+.main-container.education #step-1 {
+    display: none;
+}
+
+.main-container.household #step-2,
+.main-container.education #step-2,
+.main-container.communication #step-2 {
+    display: block;
+}
+
+/* Anniversary */
+.anniversary .anniversary-page-closed {
+    color: black;
+}
+
+.anniversary .anniversary-menu {
+    margin-top: 5em;
+    position: relative;
+    z-index: 1;
+}
+
+.anniversary .anniversary-heading {
+    color: var(--primary-color);
+    font-size: 1.6em;
+    font-weight: 500;
+}
+
+.anniversary .form-header .logo {
+    height: 35px;
+}
+
+.anniversary-menu .anniversary-text {
+    margin-top: 2.4em;
+}
+
+.anniversary-menu .earned {
+    color: var(--theme-color);
+    font-size: 3em;
+    font-weight: 600;
+    margin-top: 0.2em;
+}
+
+.anniversary-menu .dollar-sign {
+    font-size: 0.8em;
+}
+
+.anniversary-menu .anniversary-img {
+    margin-top: 1em;
+    margin-bottom: 2.2em;
+}
+
+.ratings .anniversary-text {
+    margin-top: 0;
+    font-size: 0.9em;
+    margin-left: 0.8em;
+    line-height: 1.2;
+}
+
+.ratings {
+    text-align: left;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.2em;
+    padding-left: 4em;
+}
+
+/* Account Setting */
+.account-menu {
+    margin-top: 6.5em;
+    margin-bottom: 3.8em;
+    position: relative;
+    z-index: 1;
+}
+
+.account-menu .multistep-form.account-setting {
+    padding: 2.5em 1.5em;
+    display: block !important;
+    margin-top: 0;
+}
+
+.main-container.account {
+    background-color: #F5F5F5;
+}
+
+.account-menu .settings {
+    background-color: white;
+    border-radius: 0.7em;
+    box-shadow: 0px 0px 7px -5px;
+    margin-bottom: 2em;
+}
+
+.account-menu .main-text.basic {
+    text-align: left;
+    padding-left: 1.5em;
+    padding-top: 1em;
+    color: #000000;
+    border-bottom: 1px solid #C6C6C6;
+    padding-bottom: 0.8em;
+}
+
+.account-menu .main-text.main-text-2 {
+    text-align: left;
+    font-size: 0.9em;
+}
+
+.account-menu .detail {
+    color: black;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 0.6em;
+}
+
+.account-menu .changes-link {
+    color: var(--theme-color);
+    font-weight: 600;
+    text-align: right;
+    display: block;
+    margin-top: 1.4em;
+}
+
+.account-menu .changes {
+    margin-bottom: 2em;
+}
+
+.settings .multistep-form.account-setting>.changes:last-child {
+    margin-bottom: 0;
+}
+
+.main-text-two {
+    color: #565656;
+    font-size: 0.9em;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+.main-heading-two {
+    color: var(--primary-color);
+    font-size: 1.4em;
+    font-weight: 500;
+    margin-bottom: 0.4em;
+}
+
+.main-container.account .right-side-bg {
+    width: 70px;
+}
+
+.closed-btn:hover {
+    color: black;
+}
+
+#modal-2 {
+    display: none;
+}
+
+.main-container.account .location-modal .map-text {
+    line-height: 1.4;
+}
+
+/* Password */
+#password {
+    display: block !important;
+}
+
+.password.main-container .password-text {
+    margin: 1.7em 0;
+}
+
+.location-modal.success-modal .location {
+    width: 100%;
+}
+
+.location-modal.success-modal .location-modal-btn {
+    padding: 0.6em 1.2em;
+}
+
+.menu-parent {
+    padding-top: 6.5em;
+}
+
+/* Mobile Number */
+#mob-number {
+    display: block !important;
+}
+
+#mob-number .resend-btn {
+    margin-bottom: 4em;
+}
+
+/* Email */
+#email {
+    display: block !important;
+}

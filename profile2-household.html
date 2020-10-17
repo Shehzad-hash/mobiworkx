@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Household</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <link rel="stylesheet" href="./css/css-reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="main-container household">
+        <div class="form-header white-header">
+            <a href="#">
+                <img class="logo" src="./img/logo.png" alt="">
+            </a>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle header-dropdown" type="button" id="triggerId"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-user-circle"></i>
+                    <div class="account">Account</div>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="triggerId">
+                    <a class="dropdown-item" href="account-setting.html"><img src="./img/Icon_settings.png" alt=""> Settings</a>
+                    <a class="dropdown-item" href="#"><img src="./img/Icon_exit.png" alt=""> LOG OUT</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Medal -->
+
+        <!-- Step 1 start -->
+        <div id="step-1" class="multistep-form">
+            <div class="page-medal pb-3">
+                <h1 class="main-heading black-heading">Household</h1>
+                <div class="profile-steps">
+                    <div class="q-text">Are you...?</div>
+                    <div class="radio-box">
+                        <div class="error are-you-error">Please select an answer*</div>
+                        <div class="steps-radio-button steps-radio-button-inline">
+                            <label class="custom-container" for="you-1">Married or living with a partner
+                                <input type="radio" id="you-1" name="you">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="custom-container" for="you-2">Single, divorced or widowed
+                                <input type="radio" id="you-2" name="you">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="custom-container" for="you-3">Prefer not to say
+                                <input type="radio" id="you-3" name="you">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="form-btn">SAVE CHANGE</button>
+        </div>
+       <!-- Step 1 end -->
+
+        <!-- Step 2 start -->
+        <div id="step-2" class="multistep-form">
+            <div class="page-medal">
+                <h1 class="main-heading black-heading">Household</h1>
+                <div class="profile-steps edit-step">
+                    <a class="edit household-edit" href="#"><i class="fas fa-chevron-right ml-1"></i></a>
+                    <div class="q-text q-text-2">Are you..?</div>
+                    <div class="answer hide-answer"><span class="marriage">Married or living with a partner</span></div>
+                    <div class="answer blue-color">Unanswered</div>
+                </div>
+                <div class="profile-steps edit-step mt-4">
+                    <a class="edit household-edit-2" href="#"><i class="fas fa-chevron-right ml-1"></i></a>
+                    <div class="q-text q-text-2">What are the ages of all
+                        children living in your
+                        household?</div>
+                    <div class="ages-answers">
+                        <div class="answer">3 - 6 years</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Step 2 end -->
+
+        <!-- Step 3 start -->
+        <div id="step-3" class="multistep-form">
+            <div class="page-medal pb-3">
+                <h1 class="main-heading black-heading">Household</h1>
+                <div class="profile-steps">
+                    <div class="q-text">What are the ages of all children 
+                        living in your household?</div>
+                    <div class="radio-box">
+                        <div class="error age-error">Please select an answer*</div>
+                        <div class="steps-radio-button steps-radio-button-inline">
+                            <label class="page-container add-checks">2 years or younger
+                                <input checked id="two-years" type="checkbox">
+                                <span class="checkmark checkmark-2"></span>
+                            </label>
+                            <label class="page-container add-checks">3 - 6 years
+                                <input id="three-years" type="checkbox">
+                                <span class="checkmark checkmark-2"></span>
+                            </label>
+                            <label class="page-container add-checks">7 - 12 years
+                                <input id="seven-years" type="checkbox">
+                                <span class="checkmark checkmark-2"></span>
+                            </label>
+                            <label class="page-container add-checks">13 - 18 years
+                                <input id="thirteen-years" type="checkbox">
+                                <span class="checkmark checkmark-2"></span>
+                            </label>
+                            <label class="page-container add-checks">19 years or older
+                                <input id="ninteen-years" type="checkbox">
+                                <span class="checkmark checkmark-2"></span>
+                            </label>
+                            <label class="custom-container remove-checks" for="age-1">No children in household
+                                <input type="radio" id="age-1" name="age">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="custom-container remove-checks" for="age-2">Prefer not to say
+                                <input type="radio" id="age-2" name="age">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="form-btn">SAVE CHANGE</button>
+        </div>
+         <!-- Step 3 end -->
+
+        <!-- Footer -->
+        <div class="footer-links">
+            <a href="#">Membership Terms & Conditions</a>
+            <span></span>
+            <a href="#">Panel Privacy Policy <br> Rewards Program Terms</a>
+            <span></span>
+            <a href="#">Help Centre</a>
+            <div class="copy-right">© 2020 - MobiWorkX</div>
+        </div>
+        <!-- Bg Images -->
+        <img class="bg-left img-fluid" src="./img/bg-left.png" alt="">
+        <img class="bg-right img-fluid second-bg" src="./img/profile-bg-img.png" alt="">
+        <!-- <img class="bg-right img-fluid" src="./img/bg-right.png" alt=""> -->
+    </div>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/household.js"></script>
+</body>
+</html>

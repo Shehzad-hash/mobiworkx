@@ -1,0 +1,34 @@
+.iti__hide {
+  display: none;
+}
+
+.iti {
+  width: 100%;
+}
+
+pre {
+  margin: 0 !important;
+  display: inline-block;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+  background: none;
+}
+
+.iti--separate-dial-code .iti__selected-flag {
+  background-color: transparent;
+  outline: none;
+}
+
+.iti__selected-flag {
+  padding: 0 6px 0 20px;
+}
+
+#result {
+  margin-bottom: 100px;
+}

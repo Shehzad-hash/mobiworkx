@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Setting</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <link rel="stylesheet" href="./css/css-reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="main-container account">
+        <div class="form-header white-header">
+            <a href="#">
+                <img class="logo" src="./img/logo.png" alt="">
+            </a>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle header-dropdown" type="button" id="triggerId"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-user-circle"></i>
+                    <div class="account">Account</div>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="triggerId">
+                    <a class="dropdown-item" href="account-setting.html"><img src="./img/Icon_settings.png" alt=""> Settings</a>
+                    <a class="dropdown-item" href="#"><img src="./img/Icon_exit.png" alt=""> LOG OUT</a>
+                </div>
+            </div>
+        </div>
+        <div class="account-menu">
+            <div class="text-left mb-4">
+                <div class="main-heading-two">Settings</div>
+                <div class="main-text-two">
+                    Manage your personal information,
+                    change your login details or cancel your
+                    account.
+                </div>
+            </div>
+            <div class="settings">
+                <div class="main-text basic">BASIC INFORMATION</div>
+                <div class="multistep-form account-setting">
+                    <div class="form-parent">
+                        <div class="control-parent">
+                            <input type="text" class="control" id="first-name">
+                            <label for="" class="lbl">First Name</label>
+                        </div>
+                        <div class="control-parent">
+                            <input type="text" class="control" id="last-name">
+                            <label for="" class="lbl">Last Name</label>
+                        </div>
+                        <div class="control-parent">
+                            <select class="control" name="" id="gender">
+                                <option value=""></option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                            <label for="" class="lbl">Gender</label>
+                        </div>
+                        <div class="control-parent calendar-input">
+                            <input type="date" class="control unstyled" id="dob" value="09/16/2020">
+                            <label id="date-lbl" for="" class="lbl">Date of Birth</label>
+                        </div>
+                        <div class="main-text password-text">Your address will be used to match you with surveys that
+                            are relevant to your location.</div>
+                        <div class="control-parent">
+                            <input type="text" class="control" id="address">
+                            <label for="" class="lbl">Address Line 1</label>
+                        </div>
+                        <div class="control-parent">
+                            <input type="text" class="control" id="suburb">
+                            <label for="" class="lbl">Suburb</label>
+                        </div>
+                        <div class="control-parent">
+                            <input type="text" class="control" id="city">
+                            <label for="" class="lbl">City/Town</label>
+                        </div>
+                        <div class="control-parent">
+                            <input type="number" class="control" id="postal-code">
+                            <label for="" class="lbl">Postal Code</label>
+                        </div>
+                        <button class="form-btn">SAVE CHANGES</button>
+                    </div>
+                </div>
+            </div>
+            <div class="settings">
+                <div class="main-text basic">LOGIN & SECURITY</div>
+                <div class="multistep-form account-setting">
+                    <div class="changes mt-1">
+                        <div class="detail">MOBILE NUMBER</div>
+                        <div class="main-text main-text-2">Your mobile number is used as your account username.</div>
+                        <a class="changes-link" href="mobile-number.html">CHANGE MOBILE NUMBER</a>
+                    </div>
+                    <div class="changes mt-3">
+                        <div class="detail">EMAIL ADDRESS</div>
+                        <div class="main-text main-text-2">For security, redeeming your rewards will
+                            be disabled for 7-days after this change. </div>
+                        <a class="changes-link" href="email.html">CHANGE EMAIL ADDRESS</a>
+                    </div>
+                    <div class="changes mt-3">
+                        <div class="detail">PASSWORD</div>
+                        <div class="main-text main-text-2">Choose a unique password to protect your account.</div>
+                        <a class="changes-link" href="password.html">CHANGE PASSWORD</a>
+                    </div>
+                    <div class="changes mt-3">
+                        <div class="detail">CLOSE MY ACCOUNT</div>
+                        <div class="main-text main-text-2">We’re sorry to see you go! Once you cancel your account, all
+                            your rewards and membership history will be permanently forfeited.</div>
+                        <a class="changes-link close-account" href="#">CANCEL NOW</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="footer-links-media">
+            <a class="social-link active" href="surverys.html"><img src="./img/surveys.png" alt=""><br> Surveys</a>
+            <a class="social-link" href="rewards.html"><img src="./img/rewards.png" alt=""><br> Rewards</a>
+            <a class="social-link" href="profile2.html"><img src="./img/profile.png" alt=""><br> Profile</a>
+            <a class="social-link" href="#"><img src="./img/help.png" alt=""><br> Help</a>
+        </div>
+
+        <!-- Bg Images -->
+        <img class="img-fluid left-side-bg" src="./img/left-side-bg.png" alt="">
+        <img class="img-fluid right-side-bg" src="./img/right-side-bg.png" alt="">
+
+        <!-- Closed Modal -->
+        <div class="location-modal" id="closed-modal">
+            <div id="modal-1" class="location">
+                <a class="closed-btn float-right" href="account-setting.html">
+                    <i class="fas fa-times ml-0 ml-md-3"></i>
+                </a>
+                <div class="location-text text-center mt-5">Do you really want to close your account?</div>
+                <div class="map-text mt-3">
+                    If you still want to stay with us, click on ‘BACK’
+                    below. If you prefer to leave MobiWorkX,
+                    click on ‘PROCEED’.
+                </div>
+                <div class="location-modal-buttons">
+                    <a class="location-modal-btn block" href="account-setting.html">BACK</a>
+                    <a class="location-modal-btn" href="#" id="proceed">PROCEED</a>
+                </div>
+            </div>
+            <div id="modal-2" class="location">
+                <a class="closed-btn float-right" href="account-setting.html">
+                    <i class="fas fa-times ml-0 ml-md-3"></i>
+                </a>
+                <div class="location-text text-center mt-5">Account Closed</div>
+                <div class="map-text mt-4">
+                    We’re sorry to see you go!
+                    We can confirm your account is now closed.
+                    Please contact us if you have questions.
+                    Thank you for being a member of MobiWorkX.
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/account-setting.js"></script>
+</body>
+
+</html>

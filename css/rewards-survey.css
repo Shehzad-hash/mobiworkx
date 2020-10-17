@@ -1,0 +1,331 @@
+::-webkit-scrollbar {
+    width: 4px;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--secondary-color);
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--theme-color);
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--theme-color);
+}
+
+.rewards {
+    padding: 1em 2.3em;
+    background-color: #F5F5F5;
+    position: relative;
+}
+
+.header-dropdown.dropdown-toggle::after {
+    content: unset;
+}
+
+.form-header.white-header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    padding: 0.7em 2em;
+    background-color: white;
+    box-shadow: 0px 0px 7px -5px;
+}
+
+.form-header.white-header .dropdown .btn.btn-secondary {
+    background-color: white;
+    color: #4C4C4C;
+    border: none;
+    box-shadow: none;
+    font-weight: 500;
+}
+
+.dropdown-item img {
+    vertical-align: middle;
+}
+
+.dropdown-item {
+    padding: 0.8em 1em;
+    border: none;
+    color: var(--primary-color);
+}
+
+.dropdown-menu {
+    border: none;
+    border-radius: 15px;
+}
+
+.form-header.white-header .dropdown .btn.btn-secondary i {
+    font-size: 1.5em;
+}
+
+.dropdown .account {
+    font-size: 0.9em;
+}
+
+.balance-card {
+    background-color: white;
+    box-shadow: 0px 0px 7px -5px;
+    padding: 2.3em 2em;
+    border-radius: 10px 10px 0 0;
+    margin-top: 6.2em;
+}
+
+.balance-card .balance-circle {
+    border: 7px solid #F0F2F2;
+    height: 8em;
+    width: 8em;
+    border-radius: 50%;
+    margin: 2em auto;
+}
+
+.balance-card .money {
+    font-size: 2em;
+    font-weight: 500;
+    color: #212121;
+    line-height: 3.5;
+}
+
+.balance-card .balance-card-heading {
+    font-size: 1.8em;
+    color: var(--primary-color);
+}
+
+.balance-card .balance-btn {
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+    border-radius: 30px;
+    width: 100%;
+    padding: 0.8em 0;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.balance-card.icon-card {
+    margin-top: 0;
+    border-radius: 0 0 10px 10px;
+}
+
+.balance-card.icon-card .sub-text {
+    font-weight: 700;
+    margin-bottom: 0.9em;
+}
+
+.balance-card.icon-card .sub-heading {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.balance-card.icon-card .main-text {
+    font-size: 0.8em;
+    margin: 0.9em 0;
+    line-height: 1.3;
+}
+
+.balance-card.icon-card .copy-link {
+    color: var(--theme-color);
+    text-decoration: underline !important;
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+.balance-card.icon-card .copy-img {
+    vertical-align: middle;
+    margin-right: 0.2em;
+}
+
+.history-card {
+    padding: 1.5em 1.2em;
+    background-color: white;
+    box-shadow: 0px 0px 7px -5px;
+    border-radius: 10px;
+    margin-top: 1.2em;
+    margin-bottom: 5.3em
+}
+
+.history-card .steps-scroll {
+    height: 30vh;
+    overflow-y: scroll;
+    padding-right: 0.3em;
+}
+
+.history-card .history-activity {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--primary-color);
+}
+
+.history-card .history-heading {
+    font-size: 1.2em;
+}
+
+.history-card .activity-heading {
+    font-weight: 700;
+}
+
+.history-card .complete-step {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: start;
+    border-top: 1px solid #C6C6C6;
+    padding: 1em 0;
+}
+
+.complete-step .levels {
+    color: var(--primary-color);
+    font-weight: 500;
+    margin-bottom: 0.5em;
+}
+
+.complete-step .date {
+    color: var(--secondary-color);
+    font-size: 0.9em;
+}
+
+.history-card .number {
+    font-size: 1.5em;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.footer-links-media .social-link {
+    font-size: 0.9em;
+    color: var(--primary-color);
+    font-weight: 500;
+    line-height: 1.3
+}
+
+.footer-links-media .social-link.active {
+    color: var(--theme-color);
+}
+
+.footer-links-media {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: white;
+    padding: 1em 2em;
+    box-shadow: 0px 0px 7px -5px;
+    z-index: 1;
+}
+
+.left-side-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 37px;
+}
+
+.right-side-bg {
+    right: 0;
+    position: absolute;
+    bottom: 0;
+    width: 37px;
+}
+
+/* Surveys */
+.surverys {
+    padding: 1em 2.3em;
+    background-color: #F5F5F5;
+    position: relative;
+}
+.survey-balacne-card {
+    box-shadow: 0px 0px 7px -5px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5em;
+}
+
+.survey-main-heading {
+    color: var(--primary-color);
+    margin-bottom: 0.6em;
+    font-weight: 500;
+    font-size: 1.3em;
+}
+
+.survey-card-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.survey-balance-card {
+    color: var(--primary-color);
+    font-size: 0.8em;
+    text-align: right;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.money {
+    font-weight: 600;
+    color: var(--primary-color);
+    font-size: 1.8em;
+}
+
+.survey-balacne-card .progress {
+    height: 0.7em;
+    border-radius: 20px;
+    margin-top: 3em;
+}
+
+.survey-balacne-card .progress-bar {
+    background-color: var(--theme-color);
+    border-radius: 20px;
+}
+
+.survey-balacne-card.survey-card {
+    padding: 2em 0 0.8em 0;
+    margin-bottom: 1em;
+}
+
+.survey-card img {
+    vertical-align: middle;
+}
+
+.survey-card .survey-card-child span {
+    color: #515151;
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+.survey-card .money {
+    font-size: 1.5em;
+    color: #515151;
+}
+
+.survey-id {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.survey-time {
+    color: #747474;
+    font-weight: 700;
+}
+
+.survey-card-heading {
+    color: #747474;
+    margin-top: 3em;
+    font-weight: 500;
+    padding-top: 0.8em;
+    border-top: 1px solid #E2E2E2;
+}
+
+.survey-cards-parent {
+    height: 504px;
+    overflow-y: scroll;
+    margin-bottom: 3.2em;
+}

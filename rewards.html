@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rewards</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <link rel="stylesheet" href="./css/css-reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="main-container rewards">
+        <div class="form-header white-header">
+            <a href="#">
+                <img class="logo" src="./img/logo.png" alt="">
+            </a>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle header-dropdown" type="button" id="triggerId" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-user-circle"></i>
+                    <div class="account">Account</div>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="triggerId">
+                    <a class="dropdown-item" href="account-setting.html"><img src="./img/Icon_settings.png" alt=""> Settings</a>
+                    <a class="dropdown-item" href="#"><img src="./img/Icon_exit.png" alt=""> LOG OUT</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Balance Card -->
+        <div class="balance-card">
+            <div class="balance-card-heading">Balance</div>
+            <div class="balance-circle">
+                <div class="money">$4</div>
+            </div>
+            <a class="balance-btn" href="redeem.html">REDEEM</a>
+            <div class="line"></div>
+        </div>
+        <div class="balance-card icon-card">
+            <div class="sub-text">Not enough money to redeem?</div>
+            <img src="./img/image (6).png" alt="">
+            <div class="sub-heading">Refer a friend</div>
+            <div class="main-text">Earn $0.125 for each friend you refer who
+                becomes a MobiWorkX member.</div>
+            <a class="copy-link" href="#">
+                <img class="copy-img" src="./img/copy-img.png" alt="">
+                Click to copy your personal refer link
+            </a>
+            <div class="social-media-img">
+                <img class="img-fluid mt-3" src="./img/social-icons.png" alt="">
+                <div class="share-text">share it!</div>
+            </div>
+            <hr>
+            <div class="referrals">
+                <div>
+                    <div class="referrals-heading">Your referrals</div>
+                    <div class="ref-text">The number of friends you have successfully referred.</div>
+                </div>
+                <div class="ref-number">13</div>
+            </div>
+        </div>
+
+        <!-- History Card -->
+        <div class="history-card">
+            <div class="history-activity">
+                <div class="history-heading">Your History</div>
+                <div>
+                    <a href="#">
+                        <img src="./img/Icon_filter_hor.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="history-activity mt-3 mb-3">
+                <div class="activity-heading">ACTIVITY</div>
+                <div class="dollar-sign number mr-2">$</div>
+            </div>
+            <div class="steps-scroll">
+                <div class="complete-step">
+                    <div class="ratio-steps">
+                        <div>
+                            <div class="levels">Successfully referred friend</div>
+                            <div class="levels">{{panelist id}}</div>
+                            <div class="date">{{date and time}}</div>
+                        </div>
+                        <div class="number">0.25</div>
+                    </div>
+                </div>
+                <div class="complete-step">
+                    <div class="ratio-steps">
+                        <div>
+                            <div class="levels">Survey completed</div>
+                            <div class="levels">{{survey id}}</div>
+                            <div class="date">{{date and time}}</div>
+                        </div>
+                        <div class="number">0.75</div>
+                    </div>
+                </div>
+                <a class="show-link more" href="#">Show more</a>
+                <div class="complete-step hide-step">
+                    <div class="ratio-steps">
+                        <div>
+                            <div class="levels">Special payment methods</div>
+                            <div class="levels">DTOne transaction ID: {{id}}</div>
+                            <div class="date">{{date and time}}</div>
+                        </div>
+                        <div class="number">0.75</div>
+                    </div>
+                </div>
+                <div class="complete-step hide-step">
+                    <div class="ratio-steps">
+                        <div>
+                            <div class="levels">PayPal</div>
+                            <div class="levels">PayPal transaction ID: {{id}}</div>
+                            <div class="date">{{date and time}}</div>
+                        </div>
+                        <div class="number">0.75</div>
+                    </div>
+                </div>
+                <div class="complete-step hide-step">
+                    <div class="ratio-steps">
+                        <div>
+                            <div class="levels">GCodes</div>
+                            <div class="levels">GCode: {{code}}</div>
+                            <div class="date">{{date and time}}</div>
+                        </div>
+                        <div class="number">0.75</div>
+                    </div>
+                </div>
+                <a class="show-link less" href="#">Show less</a>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer-links-media">
+            <a class="social-link" href="surverys.html"><img src="./img/surveys.png" alt=""><br> Surveys</a>
+            <a class="social-link active" href="rewards.html"><img src="./img/rewards.png" alt=""><br> Rewards</a>
+            <a class="social-link" href="profile2.html"><img src="./img/profile.png" alt=""><br> Profile</a>
+            <a class="social-link" href="#"><img src="./img/help.png" alt=""><br> Help</a>
+        </div>
+
+        <!-- Bg Images -->
+        <img class="img-fluid left-side-bg" src="./img/left-side-bg.png" alt="">
+        <img class="img-fluid right-side-bg" src="./img/right-side-bg.png" alt="">
+    </div>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/rewards.js"></script>
+</body>
+</html>

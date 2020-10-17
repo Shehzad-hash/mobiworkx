@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile 1</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <link rel="stylesheet" href="./css/intlTelInput.css">
+    <link rel="stylesheet" href="./css/demo.css">
+    <link rel="stylesheet" href="./css/css-reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="profile1-step main-container">
+        <div class="form-header">
+            <a class="brand-logo" href="#">
+                <img class="logo" src="./img/logo.png" alt="">
+            </a>
+            <a class="form-header-link" href="#" id="link">
+                <div class="gray-text sm-text">Not a mobixWorkX</div><span class="gray-text sm-text">Member?</span> SIGN
+                IN
+            </a>
+        </div>
+
+        <!-- Step Form 1 start -->
+        <div id="step-1" class="multistep-form">
+            <h1 class="main-heading mt-5 pt-5">SIGN IN</h1>
+            <div class="main-text mt-2">Please select your country and enter <br> your mobile number,<br>
+                or enter your email address.
+            </div>
+            <div class="form-parent mt-3 pt-3">
+                <div class="error mob-error">Please enter your mobile number*</div>
+                <div class="control-parent">
+                    <input id="mob-number" name="phone" type="tel" class="control phone">
+                    <label for="" class="lbl lbl-two">Mobile Number</label>
+                </div>
+                <div class="or-line">
+                    <div class="line"></div>
+                    <div class="or">Or</div>
+                    <div class="line"></div>
+                </div>
+                <div class="error email-error">Please enter your email address*</div>
+                <div class="control-parent">
+                    <input type="email" class="control" id="email">
+                    <label for="" class="lbl">Email</label>
+                </div>
+                <div class="error password-error">Please enter your password*</div>
+                <div class="control-parent mt-0 password-input">
+                    <input type="password" class="control" id="password">
+                    <label for="" class="lbl">Password</label>
+                    <img id="hide-show-password" class="password-img" src="./img/password-img.png" alt="">
+                </div>
+                <button class="form-btn">SIGN IN</button> <br>
+                <a class="porfile1-footer-link" href="#">Forgot Password?</a> <br>
+                <a class="report-link" href="#">Report a problem</a> <br>
+            </div>
+        </div>
+        <!-- Step Form 1 end -->
+
+        <!-- Step Form 2 start -->
+        <div id="step-2" class="multistep-form">
+            <img class="logo" src="./img/logo.png" alt="">
+            <div class="steps-progress">
+                <div class="custom-progress">
+                    <div class="progress-level"></div>
+                </div>
+                <div class="progress-steps">1/10</div>
+            </div>
+            <div class="profile-steps">
+                <div class="q-text">Which of the following do you have in your household?</div>
+                <div class="radio-box">
+                    <div class="radio-text">Built-in kitchen sink</div>
+                    <div class="error sink-error">Please select an answer*</div>
+                    <div class="steps-radio-button">
+                        <label class="custom-container mr-5 pr-4" for="sink-1">Yes
+                            <input type="radio" id="sink-1" name="sink">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="custom-container" for="sink-2">No
+                            <input type="radio" id="sink-2" name="sink">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="radio-box">
+                    <div class="radio-text">Flush toilet inside the house</div>
+                    <div class="error house-error">Please select an answer*</div>
+                    <div class="steps-radio-button">
+                        <label class="custom-container mr-5 pr-4" for="house-1">Yes
+                            <input type="radio" id="house-1" name="house">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="custom-container" for="house-2">No
+                            <input type="radio" id="house-2" name="house">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="radio-box">
+                    <div class="radio-text">Home security service</div>
+                    <div class="error service-error ">Please select an answer*</div>
+                    <div class="steps-radio-button">
+                        <label class="custom-container mr-5 pr-4" for="service-1">Yes
+                            <input type="radio" id="service-1" name="service">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="custom-container" for="service-2">No
+                            <input type="radio" id="service-2" name="service">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="radio-box">
+                    <div class="radio-text">Motor car</div>
+                    <div class="error car-error">Please select an answer*</div>
+                    <div class="steps-radio-button">
+                        <label class="custom-container mr-5 pr-4" for="car-1">Yes
+                            <input type="radio" id="car-1" name="car">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="custom-container" for="car-2">No
+                            <input type="radio" id="car-2" name="car">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="radio-box">
+                    <div class="radio-text">Microwave oven</div>
+                    <div class="error oven-error">Please select an answer*</div>
+                    <div class="steps-radio-button">
+                        <label class="custom-container mr-5 pr-4" for="oven-1">Yes
+                            <input type="radio" id="oven-1" name="oven">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="custom-container" for="oven-2">No
+                            <input type="radio" id="oven-2" name="oven">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <button class="form-btn">NEXT</button>
+        </div>
+        <!-- Step Form 2 end -->
+
+        <!-- Step Form 3 start -->
+        <div id="step-3" class="multistep-form">
+            <img class="logo" src="./img/logo.png" alt="">
+            <div class="steps-progress">
+                <div class="custom-progress">
+                    <div class="progress-level"></div>
+                </div>
+                <div class="progress-steps">2/10</div>
+            </div>
+            <div class="profile-steps">
+                <div class="q-text">Do you have a post office near where you live?</div>
+                <div class="radio-box">
+                    <div class="error post-error">Please select an answer*</div>
+                    <div class="steps-radio-button steps-radio-button-inline">
+                        <label class="custom-container" for="post-1">Yes
+                            <input type="radio" id="post-1" name="oven">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="custom-container" for="post-2">No
+                            <input type="radio" id="post-2" name="oven">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <button class="form-btn">NEXT</button>
+        </div>
+        <!-- Step Form 3 end -->
+
+        <!-- Step Form 4 start -->
+        <div id="step-4" class="multistep-form">
+            <img class="logo" src="./img/logo.png" alt="">
+            <div class="steps-progress">
+                <div class="custom-progress">
+                    <div class="progress-level"></div>
+                </div>
+                <div class="progress-steps">3/10</div>
+            </div>
+            <div class="profile-steps">
+                <div class="q-text">What is your personal monthly
+                    income before tax and other
+                    deductions? <br>
+                    Include all sources of income
+                    such as salary, investments,
+                    rental, dividends etc.</div>
+                <div class="radio-box">
+                    <div class="error income-error">Please select an answer*</div>
+                    <div class="steps-radio-button steps-radio-button-inline">
+                        <label class="custom-container" for="income-1">No personal income
+                            <input type="radio" id="income-1" name="income">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="custom-container" for="r-800">Less than R 800
+                            <input type="radio" id="r-800" name="income">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="custom-container" for="r-500">R 800 to R 2 500
+                            <input type="radio" id="r-500" name="income">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="custom-container" for="r-501">R 2 501 - R 5 000
+                            <input type="radio" id="r-501" name="income">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="custom-container" for="r-10">R5 001 - R10 000
+                            <input type="radio" id="r-10" name="income">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="custom-container" for="r-17">R10 001 - R17 000
+                            <input type="radio" id="r-17" name="income">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="custom-container" for="r-24">R17 001 - R24 000
+                            <input type="radio" id="r-24" name="income">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="custom-container" for="r-31">R24 001 - R31 000
+                            <input type="radio" id="r-31" name="income">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="custom-container" for="r-38">R31 001 - R38 000
+                            <input type="radio" id="r-38" name="income">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="custom-container" for="r-45">R38 001 - R45 000
+                            <input type="radio" id="r-45" name="income">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="custom-container" for="r-52">R45 001 - R52 000
+                            <input type="radio" id="r-52" name="income">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="custom-container" for="r-60">R52 001 - R60 000
+                            <input type="radio" id="r-60" name="income">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="custom-container" for="r-100">R60 001 - R100 000
+                            <input type="radio" id="r-100" name="income">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="custom-container" for="mr-100">More than R100 000
+                            <input type="radio" id="mr-100" name="income">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="custom-container" for="dont">Don't know
+                            <input type="radio" id="dont" name="income">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="custom-container" for="not-say">Prefer not to say
+                            <input type="radio" id="not-say" name="income">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <button class="form-btn">NEXT</button>
+        </div>
+        <!-- Step Form 4 end -->
+
+        <!-- Step Form 5 start -->
+        <div id="step-5" class="multistep-form">
+            <img class="logo" src="./img/logo.png" alt="">
+            <div class="steps-progress">
+                <div class="custom-progress">
+                    <div class="progress-level"></div>
+                </div>
+                <div class="progress-steps">4/10</div>
+            </div>
+            <div class="profile-steps">
+                <div class="q-text">What is your monthly
+                    household income before tax
+                    and other deductions? <br>
+                    This is the combined income of
+                    everyone in your home.</div>
+                <div class="radio-box">
+                    <div class="error household-error">Please select an answer*</div>
+                    <div class="steps-radio-button steps-radio-button-inline">
+                        <label class="custom-container" for="household-1">No household income
+                            <input type="radio" id="household-1" name="household">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="custom-container" for="household-2">Less than R 800
+                            <input type="radio" id="household-2" name="household">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="custom-container" for="household-3">R 800 to R 2 500
+                            <input type="radio" id="household-3" name="household">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="custom-container" for="household-4">R 2 501 - R 5 000
+                            <input type="radio" id="household-4" name="household">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="custom-container" for="household-5">R5 001 - R10 000
+                            <input type="radio" id="household-5" name="household">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="custom-container" for="household-6">R10 001 - R17 000
+                            <input type="radio" id="household-6" name="household">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="custom-container" for="household-7">R17 001 - R24 000
+                            <input type="radio" id="household-7" name="household">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="custom-container" for="household-8">R24 001 - R31 000
+                            <input type="radio" id="household-8" name="household">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="custom-container" for="household-9">R31 001 - R38 000
+                            <input type="radio" id="household-9" name="household">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="custom-container" for="household-10">R38 001 - R45 000
+                            <input type="radio" id="household-10" name="household">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="custom-container" for="household-11">R45 001 - R52 000
+                            <input type="radio" id="household-11" name="household">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="custom-container" for="household-12">R52 001 - R60 000
+                            <input type="radio" id="household-12" name="household">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="custom-container" for="household-13">R60 001 - R100 000
+                            <input type="radio" id="household-13" name="household">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="custom-container" for="household-14">More than R100 000
+                            <input type="radio" id="household-14" name="household">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="custom-container" for="household-15">Don't know
+                            <input type="radio" id="household-15" name="household">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="custom-container" for="household-16">Prefer not to say
+                            <input type="radio" id="household-16" name="household">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <button class="form-btn">NEXT</button>
+        </div>
+        <!-- Step Form 5 end -->
+
+        <!-- Step Form 6 start -->
+        <div id="step-6" class="multistep-form">
+            <img class="logo" src="./img/logo.png" alt="">
+            <div class="steps-progress">
+                <div class="custom-progress">
+                    <div class="progress-level"></div>
+                </div>
+                <div class="progress-steps">5/10</div>
+            </div>
+            <div class="profile-steps">
+                <div class="q-text">Do you have a personal computer
+                    such as a laptop or desktop in
+                    your household?</div>
+                <div class="radio-box">
+                    <div class="error system-error">Please select an answer*</div>
+                    <div class="steps-radio-button steps-radio-button-inline">
+                        <label class="custom-container next-opt" for="system-1">Yes
+                            <input type="radio" id="system-1" name="system">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="custom-container next-opt" for="system-2">No
+                            <input type="radio" id="system-2" name="system">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <!-- <button class="form-btn">NEXT</button> -->
+        </div>
+        <!-- Step Form 6 end -->
+
+        <!-- Step Form 7 start -->
+        <div id="step-7" class="multistep-form">
+            <img class="logo" src="./img/logo.png" alt="">
+            <div class="steps-progress">
+                <div class="custom-progress">
+                    <div class="progress-level"></div>
+                </div>
+                <div class="progress-steps">6/10</div>
+            </div>
+            <div class="profile-steps">
+                <div class="q-text">Do you have a motor car in your
+                    household?</div>
+                <div class="radio-box">
+                    <div class="error motor-car-error">Please select an answer*</div>
+                    <div class="steps-radio-button steps-radio-button-inline">
+                        <label class="custom-container next-opt" for="motor-car-1">Yes
+                            <input type="radio" id="motor-car-1" name="motor-car">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="custom-container next-opt" for="motor-car-2">No
+                            <input type="radio" id="motor-car-2" name="motor-car">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <!-- <button class="form-btn">NEXT</button> -->
+        </div>
+        <!-- Step Form 7 end -->
+
+        <!-- Step Form 8 start -->
+        <div id="step-8" class="multistep-form">
+            <img class="logo" src="./img/logo.png" alt="">
+            <div class="steps-progress">
+                <div class="custom-progress">
+                    <div class="progress-level"></div>
+                </div>
+                <div class="progress-steps">7/10</div>
+            </div>
+            <div class="profile-steps">
+                <div class="q-text">Do you have hot running water
+                    from a geyser in your
+                    household?</div>
+                <div class="radio-box">
+                    <div class="error water-error">Please select an answer*</div>
+                    <div class="steps-radio-button steps-radio-button-inline">
+                        <label class="custom-container next-opt" for="water-1">Yes
+                            <input type="radio" id="water-1" name="water">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="custom-container next-opt" for="water-2">No
+                            <input type="radio" id="water-2" name="water">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <!-- <button class="form-btn">NEXT</button> -->
+        </div>
+        <!-- Step Form 8 end -->
+
+        <!-- Step Form 9 start -->
+        <div id="step-9" class="multistep-form">
+            <img class="logo" src="./img/logo.png" alt="">
+            <div class="steps-progress">
+                <div class="custom-progress">
+                    <div class="progress-level"></div>
+                </div>
+                <div class="progress-steps">8/10</div>
+            </div>
+            <div class="profile-steps">
+                <div class="q-text">Do you have a TV set in your
+                    household?</div>
+                <div class="radio-box">
+                    <div class="error tv-error">Please select an answer*</div>
+                    <div class="steps-radio-button steps-radio-button-inline">
+                        <label class="custom-container next-opt" for="tv-1">Yes
+                            <input type="radio" id="tv-1" name="tv">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="custom-container next-opt" for="tv-2">No
+                            <input type="radio" id="tv-2" name="tv">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <!-- <button class="form-btn">NEXT</button> -->
+        </div>
+        <!-- Step Form 9 end -->
+
+        <!-- Step Form 10 start -->
+        <div id="step-10" class="multistep-form">
+            <img class="logo" src="./img/logo.png" alt="">
+            <div class="steps-progress">
+                <div class="custom-progress">
+                    <div class="progress-level"></div>
+                </div>
+                <div class="progress-steps">9/10</div>
+            </div>
+            <div class="profile-steps">
+                <div class="q-text">Do you have a floor polisher
+                    or vacuum cleaner in your
+                    household?</div>
+                <div class="radio-box">
+                    <div class="error floor-error">Please select an answer*</div>
+                    <div class="steps-radio-button steps-radio-button-inline">
+                        <label class="custom-container next-opt" for="floor-1">Yes
+                            <input type="radio" id="floor-1" name="floor">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="custom-container next-opt" for="floor-2">No
+                            <input type="radio" id="floor-2" name="floor">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <!-- <button class="form-btn">NEXT</button> -->
+        </div>
+        <!-- Step Form 9 end -->
+
+        <!-- Step Form 11 start -->
+        <div id="step-11" class="multistep-form">
+            <img class="logo" src="./img/logo.png" alt="">
+            <div class="steps-progress">
+                <div class="custom-progress">
+                    <div class="progress-level"></div>
+                </div>
+                <div class="progress-steps">10/10</div>
+            </div>
+            <div class="profile-steps">
+                <div class="q-text">Do you have an electric
+                    stove in your household?</div>
+                <div class="radio-box">
+                    <div class="error stove-error">Please select an answer*</div>
+                    <div class="steps-radio-button steps-radio-button-inline">
+                        <label class="custom-container next-opt" for="stove-1">Yes
+                            <input type="radio" id="stove-1" name="stove">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="custom-container next-opt" for="stove-2">No
+                            <input type="radio" id="stove-2" name="stove">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <!-- <button class="form-btn">NEXT</button> -->
+        </div>
+        <!-- Step Form 9 end -->
+
+        <!-- Final Step 11 start -->
+        <div id="step-12" class="multistep-form">
+            <a class="brand-logo" href="#">
+                <img class="logo" src="./img/logo.png" alt="">
+            </a>
+            <h1 class="main-heading mt-5">Congrats!</h1>
+            <div class="sub-text mt-4">Level 1 Profile Completed! <br>
+                You have earned...
+            </div>
+            <div class="earn">$1</div>
+            <img src="./img/congrats-img.png" alt="">
+            <button class="form-btn">UNLOCK MORE MONEY</button>
+            <a class="closed-step-btn" href="#">
+                <i class="fas fa-times"></i>
+            </a>
+        </div>
+        <!-- Final Step 11 end -->
+
+        <!-- Footer -->
+        <div class="footer-links">
+            <a href="#">Membership Terms & Conditions</a>
+            <span></span>
+            <a href="#">Panel Privacy Policy <br> Rewards Program Terms</a>
+            <span></span>
+            <a href="#">Help Centre</a>
+            <div class="copy-right">© 2020 - MobiWorkX</div>
+        </div>
+
+        <!-- Bg Imgs -->
+        <img class="bg-left img-fluid" src="./img/bg-left.png" alt="">
+        <img class="bg-right img-fluid" src="./img/bg-right.png" alt="">
+    </div>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/intlTelInput.js"></script>
+    <script class="iti-load-utils" async="" src="build/js/utils.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/profile1-step.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Communication</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <link rel="stylesheet" href="./css/css-reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="main-container communication">
+        <div class="form-header white-header">
+            <a href="#">
+                <img class="logo" src="./img/logo.png" alt="">
+            </a>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle header-dropdown" type="button" id="triggerId"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-user-circle"></i>
+                    <div class="account">Account</div>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="triggerId">
+                    <a class="dropdown-item" href="account-setting.html"><img src="./img/Icon_settings.png" alt=""> Settings</a>
+                    <a class="dropdown-item" href="#"><img src="./img/Icon_exit.png" alt=""> LOG OUT</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Medal -->
+
+        <!-- Step 1 start -->
+        <div id="step-1" class="multistep-form">
+            <div class="page-medal pb-3">
+                <h1 class="main-heading black-heading">Communication</h1>
+                <div class="profile-steps">
+                    <div class="q-text">What is your preferred
+                        communication method?</div>
+                    <div class="radio-box">
+                        <div class="error comm-error">Please select an answer*</div>
+                        <div class="steps-radio-button steps-radio-button-inline">
+                            <label class="custom-container social-icon" for="media-1">
+                                <img src="./img/sms.png" alt="">
+                                SMS
+                                <input checked type="radio" id="media-1" name="media">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="custom-container social-icon" for="media-2">
+                                    <img src="./img/email.png" alt="">
+                                    Email
+                                <input type="radio" id="media-2" name="media">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="page-container social-icon">
+                                <img src="./img/whatsapp.png" alt="">
+                                <div>
+                                    Notifications and updates
+                                    over WhatsApp
+                                </div>
+                                <input id="whatsapp" type="checkbox">
+                                <span class="checkmark checkmark-2"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="form-btn">SAVE CHANGE</button>
+        </div>
+        <!-- Step 1 end -->
+
+        <!-- Step 2 start -->
+        <div id="step-2" class="multistep-form">
+            <div class="page-medal">
+                <h1 class="main-heading black-heading">Communication</h1>
+                <div class="profile-steps edit-step">
+                    <a class="edit comm-edit" href="#"><i class="fas fa-chevron-right ml-1"></i></a>
+                    <div class="q-text q-text-2">What is your preferred 
+                        communication method?</div>
+                    <div class="answer d-flex">
+                        <img class="mr-2 comm-select-img" src="./img/sms.png" alt="">
+                        <span class="comm-select mt-1">SMS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Step 2 end -->
+
+        <!-- Footer -->
+        <div class="footer-links">
+            <a href="#">Membership Terms & Conditions</a>
+            <span></span>
+            <a href="#">Panel Privacy Policy <br> Rewards Program Terms</a>
+            <span></span>
+            <a href="#">Help Centre</a>
+            <div class="copy-right">© 2020 - MobiWorkX</div>
+        </div>
+        <!-- Bg Images -->
+        <img class="bg-left img-fluid" src="./img/bg-left.png" alt="">
+        <img class="bg-right img-fluid second-bg" src="./img/profile-bg-img.png" alt="">
+        <!-- <img class="bg-right img-fluid" src="./img/bg-right.png" alt=""> -->
+    </div>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/communication.js"></script>
+</body>
+
+</html>

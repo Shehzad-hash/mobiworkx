@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <link rel="stylesheet" href="./css/intlTelInput.css">
+    <link rel="stylesheet" href="./css/demo.css">
+    <link rel="stylesheet" href="./css/css-reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="registeration-step main-container">
+        <div class="form-header">
+            <a href="#">
+                <img class="logo" src="./img/logo.png" alt="">
+            </a>
+            <!-- <a class="form-header-link" href="#">SIGN IN</a> -->
+        </div>
+
+        <!-- Step Form 1 start -->
+        <div id="step-1" class="multistep-form">
+            <h1 class="main-heading">LET'S GET STARTED</h1>
+            <div class="multi-steps mt-3">
+                <span class="number current">1</span>
+                <span class="line current"></span>
+                <span class="number">2</span>
+                <span class="line"></span>
+                <span class="number">3</span>
+                <span class="line"></span>
+                <span class="number">4</span>
+            </div>
+            <div class="main-text mt-4">Sign up is completely free.</div>
+            <div class="form-parent mt-3 pt-3">
+                <div class="error first-name">Complete this field*</div>
+                <div class="control-parent">
+                    <input type="text" class="control" id="first-name">
+                    <label for="" class="lbl">First Name</label>
+                </div>
+                <div class="error last-name">Complete this field*</div>
+                <div class="control-parent">
+                    <input type="text" class="control" id="last-name">
+                    <label for="" class="lbl">Last Name</label>
+                </div>
+                <div class="error mob-number">Complete this field*</div>
+                <div class="control-parent">
+                    <input id="mob-number" name="phone" type="tel" class="control phone">
+                    <label for="" class="lbl lbl-two">Mobile Number</label>
+                </div>
+                <div class="control-parent">
+                    <input type="email" class="control" id="mob-number">
+                    <label for="" class="lbl">Email Address (Optional)</label>
+                </div>
+                <div class="main-text password-text">Password must be at least 8 characters with at least one
+                    uppercase, one lowercase and a number 0-9</div>
+                <div class="error password">Complete this field*</div>
+                <div class="error password-2">Password must be at least 8 characters with at least
+                    one Uppercase, one lowercase and a number 0-9*</div>
+                <div class="control-parent mt-0 password-input">
+                    <input type="password" class="control" id="password">
+                    <label for="" class="lbl">Password</label>
+                    <img id="hide-show-password" class="password-img" src="./img/password-img.png" alt="">
+                </div>
+                <button class="form-btn">NEXT</button>
+            </div>
+        </div>
+        <!-- Step Form 1 end -->
+
+        <!-- Step Form 2 start -->
+        <div id="step-2" class="multistep-form">
+            <h1 class="main-heading">VERIFICATION</h1>
+            <div class="multi-steps mt-3">
+                <span class="number done">1</span>
+                <span class="line current"></span>
+                <span class="number current">2</span>
+                <span class="line current"></span>
+                <span class="number">3</span>
+                <span class="line"></span>
+                <span class="number">4</span>
+            </div>
+            <div class="main-text mt-4 px-0 px-md-3"> Please enter the code you received via text message.</div>
+            <div class="form-parent mt-2">
+                <div class="error code">Complete this field*</div>
+                <div class="control-parent">
+                    <input type="text" class="control" id="code">
+                    <label for="" class="lbl">Code</label>
+                </div>
+                <button class="form-btn">VERIFY</button>
+                <a class="resend-btn" href="#">RESEND CODE</a>
+            </div>
+        </div>
+        <!-- Step Form 2 end -->
+
+        <!-- Step Form 3 start -->
+        <div id="step-3" class="multistep-form">
+            <h1 class="main-heading">TELL US MORE</h1>
+            <div class="multi-steps mt-3">
+                <span class="number done">1</span>
+                <span class="line current"></span>
+                <span class="number done">2</span>
+                <span class="line current"></span>
+                <span class="number">3</span>
+                <span class="line"></span>
+                <span class="number">4</span>
+            </div>
+            <div class="main-text mt-4 px-0 px-md-3">Help us to match you with surveys you will qualify for.</div>
+            <div class="form-parent mt-2">
+                <div class="error gender">Complete this field*</div>
+                <div class="control-parent">
+                    <select class="control" name="" id="gender">
+                        <option value=""></option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                    <label for="" class="lbl">Gender</label>
+                </div>
+                <div class="error dob">Complete this field*</div>
+                <div class="control-parent calendar-input">
+                    <input type="date" class="control unstyled" id="dob" value="09/16/2020">
+                    <label id="date-lbl" for="" class="lbl">Date of Birth</label>
+                </div>
+                <div class="error ethnicity">Complete this field*</div>
+                <div class="control-parent">
+                    <select class="control" name="" id="ethnicity">
+                        <option value=""></option>
+                        <option value="white">White</option>
+                        <option value="black">Black</option>
+                        <option value="coloured">Coloured</option>
+                        <option value="indian-asian">Indian/Asian</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <label for="" class="lbl">Ethnicity</label>
+                </div>
+                <div class="error address">Complete this field*</div>
+                <div class="control-parent">
+                    <input type="text" class="control" id="address">
+                    <label for="" class="lbl">Address Line 1</label>
+                </div>
+                <div class="error suburb">Complete this field*</div>
+                <div class="control-parent">
+                    <input type="text" class="control" id="suburb">
+                    <label for="" class="lbl">Suburb</label>
+                </div>
+                <div class="error city">Complete this field*</div>
+                <div class="control-parent">
+                    <input type="text" class="control" id="city">
+                    <label for="" class="lbl">City/Town</label>
+                </div>
+                <div class="error postal-code">Complete this field*</div>
+                <div class="control-parent">
+                    <input type="number" class="control" id="postal-code">
+                    <label for="" class="lbl">Postal Code</label>
+                </div>
+                <button class="form-btn">NEXT</button>
+            </div>
+        </div>
+        <!-- Step Form 3 end -->
+
+        <!-- Step Form 4 start -->
+        <div id="step-4" class="multistep-form">
+            <h1 class="main-heading">TERMS & CONDITIONS</h1>
+            <div class="multi-steps mt-3">
+                <span class="number done">1</span>
+                <span class="line current"></span>
+                <span class="number done">2</span>
+                <span class="line current"></span>
+                <span class="number done">3</span>
+                <span class="line current"></span>
+                <span class="number current">4</span>
+            </div>
+            <div class="main-text mt-4">To sign up, you'll need to agree to our terms.</div>
+            <div class="form-parent mt-5">
+                <div class="error  privacy-policy-checkbox">Acceptance is required*</div>
+                <div class="control-parent">
+                    <label class="page-container">Yes, I have read and understand the
+                        <div class="colord">Panel Privacy Policy.</div>
+                        <input type="checkbox" id="privacy-policy">
+                        <span class="checkmark checkmark-2"></span>
+                    </label>
+                </div>
+                <div class="error terms-and-conditions-checkbox">Acceptance is required*</div>
+                <div class="control-parent">
+                    <label class="page-container">Yes, I have read and understand the
+                        <div class="colord">Membership Terms & Conditions.</div>
+                        <input type="checkbox" id="terms-and-conditions">
+                        <span class="checkmark checkmark-2"></span>
+                    </label>
+                </div>
+                <div class="error rewards">Acceptance is required*</div>
+                <div class="control-parent">
+                    <label class="page-container">Yes, I have read and understand the
+                        <div class="colord">Rewards Program Terms.</div>
+                        <input type="checkbox" id="rewards">
+                        <span class="checkmark checkmark-2"></span>
+                    </label>
+                </div>
+                <div class="error updates">Acceptance is required*</div>
+                <div class="control-parent">
+                    <label class="page-container">Yes, I agree to be contacted by MobiWorkX about updates, <br> services
+                        and offers. We promise no third parties will contact you.
+
+                        <input type="checkbox" id="updates">
+                        <span class="checkmark checkmark-2"></span>
+                    </label>
+                </div>
+                <button class="form-btn">SIGN UP</button>
+            </div>
+        </div>
+        <!-- Step Form 4 end -->
+
+        <!-- Final Step 5 start -->
+        <div id="step-5" class="multistep-form">
+            <h1 class="main-heading mt-5">Congrats!</h1>
+            <div class="sub-text mt-4">Regiesteration Completed! <br> You have earned...</div>
+            <div class="earn">$1</div>
+            <img src="./img/congrats-img.png" alt="">
+            <button class="form-btn">UNLOCK MORE MONEY</button>
+            <a class="closed-step-btn" href="#">
+                <i class="fas fa-times"></i>
+            </a>
+        </div>
+        <!-- Final Step end -->
+
+        <!-- Footer -->
+        <div class="footer-links">
+            <a href="#">Membership Terms & Conditions</a>
+            <span></span>
+            <a href="#">Panel Privacy Policy <br> Rewards Program Terms</a>
+            <span></span>
+            <a href="#">Help Centre</a>
+            <div class="copy-right">© 2020 - MobiWorkX</div>
+        </div>
+
+        <!-- Bg Imgs -->
+        <img class="bg-left img-fluid" src="./img/bg-left.png" alt="">
+        <img class="bg-right img-fluid" src="./img/bg-right.png" alt="">
+
+        <!-- Step 3 modal location-modal start -->
+        <div class="location-modal" id="location-model">
+            <div class="location">
+                <span class="map-text">https://www.google.co.za/maps wants to:</span>
+                <a class="closed-btn" href="#">
+                    <i class="fas fa-times ml-0 ml-md-3"></i>
+                </a>
+                <div class="location-text">
+                    <i class="fas fa-map-marker-alt mr-2"></i>
+                    Know your location
+                </div>
+                <div class="location-modal-buttons">
+                    <a class="location-modal-btn block mr-1 mr-md-4" href="#"
+                        id="location-model-next-button-two">Block</a>
+                    <a class="location-modal-btn" href="#" id="location-model-next-button">Allow</a>
+                </div>
+            </div>
+        </div>
+        <!-- Step 3 modal location-modal end -->
+
+        <!-- Step 4 modal notification-modal start -->
+        <div class="location-modal" id="notification-model">
+            <div class="location">
+                <span class="map-text">https://mobiworkx.com/ wants to:</span>
+                <a class="closed-btn" href="#">
+                    <i class="fas fa-times ml-3 ml-md-5"></i>
+                </a>
+                <div class="location-text">
+                    <i class="fas fa-bell mr-2"></i>
+                    Show notifications
+                </div>
+                <div class="location-modal-buttons">
+                    <a class="location-modal-btn block mr-1 mr-md-4 model-cancel" href="#"
+                        id="notification-model-next-button-two">Block</a>
+                    <a class="location-modal-btn" href="#" id="notification-model-next-button">Allow</a>
+                </div>
+            </div>
+        </div>
+        <!-- Step 4 modal notification-modal end -->
+    </div>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/intlTelInput.js"></script>
+    <script class="iti-load-utils" async="" src="build/js/utils.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
