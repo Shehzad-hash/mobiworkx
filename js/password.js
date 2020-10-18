@@ -17,9 +17,6 @@ $('.password .form-btn').click(function (e) {
         $('.error.confirm').css('display', 'block');
         $('.error.confirm-2').css('display', 'block');
       }
-      if (cond4) {
-        $('.error.new').css('display', 'block');
-      }
       if (!cond1 && !cond2 && !cond3) {
         $('#show-modal').css('display', 'flex');
       }
