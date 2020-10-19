@@ -249,7 +249,7 @@ a {
     padding: 0.9em;
 }
 
-#step-3 #date-lbl {
+#date-lbl {
     top: -8px !important;
     left: 9px !important;
 }
@@ -1394,11 +1394,13 @@ a {
 }
 
 /* Account Setting */
-.account-menu {
-    margin-top: 6.5em;
-    margin-bottom: 3.8em;
+.account .account-menu {
     position: relative;
     z-index: 1;
+    height: 29.5em;
+    overflow-y: scroll;
+    padding: 0 1em;
+    margin: 7em 1.3em 2em 0.6em;
 }
 
 .account-menu .multistep-form.account-setting {
