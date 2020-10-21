@@ -8,3 +8,4 @@ $('#proceed').click(function (e) {
     $('#modal-2').css('display', 'block');
     $('#modal-1').css('display', 'none');
 });
+document.querySelector('#dob').defaultValue = "1997-10-21";

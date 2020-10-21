@@ -1487,6 +1487,14 @@ a {
     line-height: 1.4;
 }
 
+.control-parent .control::placeholder {
+    color: black;
+}
+
+.main-container.account .settings .control-parent.black-lbl .lbl {
+    color: black;
+}
+
 /* Password */
 #password {
     display: block !important;
