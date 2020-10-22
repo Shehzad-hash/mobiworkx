@@ -1490,9 +1490,24 @@ a {
 .control-parent .control::placeholder {
     color: black;
 }
+.main-container.account .set-lbl {
+    top: -8px !important;
+    left: 9px !important;
+}
 
-.main-container.account .settings .control-parent.black-lbl .lbl {
+input:read-only {
     color: black;
+}
+#show-modal .closed-btn {
+    display: none;
+}
+
+.goto-link {
+    color: var(--theme-color);
+}
+
+.goto-link:hover {
+    color: var(--theme-color);
 }
 
 /* Password */
