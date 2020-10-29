@@ -1499,7 +1499,7 @@ a {
 }
 
 input:read-only {
-    color: black;
+    color: var(--primary-color) !important;
 }
 #show-modal .closed-btn {
     display: none;
@@ -1546,4 +1546,10 @@ input:read-only {
 /* Email */
 #email {
     display: block !important;
+}
+.closed-icon {
+    float: right;
+    color: black;
+    margin-right: 2em;
+    margin-top: -1.2em;
 }

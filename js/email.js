@@ -14,5 +14,8 @@ $('.email-address .form-btn').click(function (e) {
       }
       if (!cond1 && !cond2) {
         $('#show-modal').css('display', 'flex');
+        $('#show-modal').fadeIn(2000, function () {
+          $('#show-modal').fadeOut(3000);
+      });
       }
 });
