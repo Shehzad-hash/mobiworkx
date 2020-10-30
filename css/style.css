@@ -1527,6 +1527,7 @@ input:read-only {
 
 .location-modal.success-modal .location {
     width: 100%;
+    max-width: 23em;
 }
 
 .location-modal.success-modal .location-modal-btn {
