@@ -1165,6 +1165,7 @@ a {
 
 .redeem-collapse .collapse-btn.disable .link-btn {
     background-color: #9F9F9F;
+    pointer-events: none;
 }
 
 .redeem-collapse .collapse-btn.disable .withdrawal-amount {
@@ -1493,6 +1494,7 @@ a {
 .control-parent .control::placeholder {
     color: black;
 }
+
 .main-container.account .set-lbl {
     top: -8px !important;
     left: 9px !important;
@@ -1501,6 +1503,7 @@ a {
 input:read-only {
     color: var(--primary-color) !important;
 }
+
 #show-modal .closed-btn {
     display: none;
 }
@@ -1543,10 +1546,15 @@ input:read-only {
     margin-bottom: 4em;
 }
 
+.verfication-site {
+    display: none;
+}
+
 /* Email */
 #email {
     display: block !important;
 }
+
 .closed-icon {
     float: right;
     color: black;

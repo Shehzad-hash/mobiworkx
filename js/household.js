@@ -6,7 +6,7 @@ $(document).ready(function () {
   fillResults();
 });
 
-function fillResults () {
+function fillResults() {
   $('.ages-answers').html('');
   for (let i = 0; i < ages.length; i++) {
     $(`<div class="answer mb-2">${ages[i]}</div>`).appendTo('.ages-answers');
@@ -32,13 +32,13 @@ $('.household .form-btn').click(function (e) {
       if (you2) marriage = 'Single, divorced or widowed';
       if (you3) marriage = 'Prefer not to say';
       $('#step-1').css('display', 'none');
-      $('#step-2').css('display', 'block');      
-      $('.answer.blue-color').css('display', 'none');      
-      $('.answer.hide-answer').css('display', 'block');      
+      $('#step-2').css('display', 'block');
+      $('.answer.blue-color').css('display', 'none');
+      $('.answer.hide-answer').css('display', 'block');
       break;
-      case 'age':
-        const years2 = document.querySelector('input#two-years').checked;
-        const years3 = document.querySelector('input#three-years').checked;
+    case 'age':
+      const years2 = document.querySelector('input#two-years').checked;
+      const years3 = document.querySelector('input#three-years').checked;
       const years7 = document.querySelector('input#seven-years').checked;
       const years13 = document.querySelector('input#thirteen-years').checked;
       const years19 = document.querySelector('input#ninteen-years').checked;
@@ -58,7 +58,7 @@ $('.household .form-btn').click(function (e) {
       if (age1) ages.push('No children in household');
       if (age2) ages.push('Prefer not to say');
       $('#step-3').css('display', 'none');
-      $('#step-2').css('display', 'block');      
+      $('#step-2').css('display', 'block');
       break;
   }
   fillResults();
@@ -76,8 +76,8 @@ $('.household-edit-2').click(function (e) {
   $('#step-3').css('display', 'block');
 });
 
-$('.remove-checks').click(function (e) { 
-  
+$('.remove-checks').click(function (e) {
+
   document.querySelector('input#two-years').checked = false;
   document.querySelector('input#three-years').checked = false;
   document.querySelector('input#seven-years').checked = false;
@@ -85,7 +85,7 @@ $('.remove-checks').click(function (e) {
   document.querySelector('input#ninteen-years').checked = false;
 });
 
-$('.add-checks').click(function (e) { 
+$('.add-checks').click(function (e) {
   document.querySelector('input#age-1').checked = false;
   document.querySelector('input#age-2').checked = false;
 });

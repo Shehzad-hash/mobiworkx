@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +9,6 @@
     <link rel="stylesheet" href="./css/css-reset.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
-
 <body>
     <div style="height: 100vh;" class="main-container account px-0 container">
         <div class="form-header white-header">
@@ -24,7 +22,8 @@
                     <div class="account">Account</div>
                 </button>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="triggerId">
-                    <a class="dropdown-item disabled" href="account-setting.html"><img src="./img/Icon_settings.png" alt=""> Settings</a>
+                    <a style="pointer-events: none;" class="dropdown-item disabled" href="account-setting.html"><img
+                            src="./img/Icon_settings.png" alt=""> Settings</a>
                     <a class="dropdown-item" href="profile1.html"><img src="./img/Icon_exit.png" alt=""> LOG OUT</a>
                 </div>
             </div>
@@ -142,14 +141,15 @@
                 </div>
             </div>
             <div id="modal-2" class="location">
-                <a class="closed-btn float-right" href="#">
+                <a class="closed-btn float-right goto-landing" href="#">
                     <i class="fas fa-times ml-0 ml-md-3"></i>
                 </a>
                 <div class="location-text text-center mt-5">Account Closed</div>
                 <div class="map-text mt-4">
                     We’re sorry to see you go!
                     We can confirm your account is now closed.
-                    Please <a class="goto-link" href="#">contact us</a> if you have questions. Thank you for being a member of MobiWorkX.
+                    Please <a class="goto-link" href="#">contact us</a> if you have questions. Thank you for being a
+                    member of MobiWorkX.
                 </div>
             </div>
         </div>
@@ -160,5 +160,4 @@
     <script src="./js/main.js"></script>
     <script src="./js/account-setting.js"></script>
 </body>
-
 </html>
