@@ -1562,3 +1562,55 @@ input:read-only {
     margin-right: 2em;
     margin-top: -1.2em;
 }
+
+/* Forgot Password */
+#forgot-pass {
+    display: block;
+}
+
+#forgot-pass-2 {
+    display: none;
+}
+
+.pass-text {
+    color: var(--primary-color);
+    font-weight: 500;
+    margin-top: 4em;
+}
+
+.forgot-password {
+    position: relative;
+    z-index: 1;
+}
+
+.forgot-password .logo {
+    height: unset;
+}
+
+#forgot-pass .link-btn {
+    padding: 1em 8em;
+    margin-top: 8em;
+}
+
+.forgot-password .footer-links {
+    margin-top: 4em;
+}
+
+#forgot-pass-2 h1 {
+    margin-top: 2em;
+}
+
+.pass-text-2 {
+    line-height: 1.5;
+    margin: 2em 0 7em 0;
+}
+
+.pass-page-close a {
+    color: black;
+}
+
+.pass-page-close {
+    float: right;
+    margin-top: 1em;
+    font-size: 1.2em;
+}
