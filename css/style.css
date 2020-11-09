@@ -1561,6 +1561,8 @@ input:read-only {
     color: black;
     margin-right: 2em;
     margin-top: -1.2em;
+    position: relative;
+    z-index: 1000;
 }
 
 /* Forgot Password */

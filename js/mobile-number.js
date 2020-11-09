@@ -24,6 +24,7 @@ $('.verify-btn').click(function (e) {
 
   if (cond3) {
     $('.error.code').css('display', 'block');
+    $('.error.code-error-2').css('display', 'block');
   } else {
     $('#show-modal').css('display', 'flex');
     setTimeout(() => {
