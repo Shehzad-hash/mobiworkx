@@ -15,5 +15,4 @@ $('.forgot-password-page #reset-btn').click(function (e) {
         $('#forgot-pass').css('display', 'none');
         $('#forgot-pass-2').css('display', 'block');
     }
-
 });
