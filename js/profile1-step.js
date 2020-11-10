@@ -4,22 +4,22 @@ $('.profile1-step .form-btn').click(function (e) {
   switch (currentStep) {
     case 1:
       const mobNumber = $('input#mob-number').val().trim();
-      const email = $('input#email').val().trim();
+      // const email = $('input#email').val().trim();
       const password = $('input#password').val().trim();
       const cond1 = mobNumber == '';
-      const cond2 = email == '';
+      // const cond2 = email == '';
       const cond3 = password == '';
       if (cond1) {
         $('.error.mob-error').css('display', 'block');
       }
-      if (cond2) {
-        $('.error.email-error').css('display', 'block');
-      }
+      // if (cond2) {
+      //   $('.error.email-error').css('display', 'block');
+      // }
       if (cond3) {
         $('.error.password-error').css('display', 'block');
       }
 
-      if ((!cond1 || !cond2) && !cond3) {
+      if ((!cond1) && !cond3) {
         $('#step-1').css('display', 'none');
         $('#step-2').css('display', 'block');
         $('.form-header').css('display', 'none');

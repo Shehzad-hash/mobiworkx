@@ -56,6 +56,7 @@ $('.registeration-step .form-btn').click(function (e) {
       if (!cond1 && !cond2 && !cond3 && !cond4 && !cond5) {
         $('#step-1').css('display', 'none');
         $('#step-2').css('display', 'block');
+        $('.form-header-link').css('display', 'none');
         currentStep = 2;
       }
 
