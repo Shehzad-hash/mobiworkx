@@ -32,7 +32,8 @@ $('.household .form-btn').click(function (e) {
       if (you2) marriage = 'Single, divorced or widowed';
       if (you3) marriage = 'Prefer not to say';
       $('#step-1').css('display', 'none');
-      $('#step-2').css('display', 'block');
+      $('#step-4').css('display', 'block');
+      $('.form-header.white-header').css('display', 'none')
       $('.answer.blue-color').css('display', 'none');
       $('.answer.hide-answer').css('display', 'block');
       break;
@@ -95,4 +96,10 @@ $('.house-step').click(function (e) {
   $('#step-1').css('display', 'none');
   $('#step-3').css('display', 'none');
   $('#step-2').css('display', 'block');
+});
+
+$('#surverys-link').click(function (e) { 
+  e.preventDefault();
+  window.location.href = './surverys.html'
+  
 });

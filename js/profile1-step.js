@@ -188,10 +188,3 @@ $(".next-opt input[type='radio']").change(function (e) {
   const newProgress = (currentStep - 1) * 10;
   $('.custom-progress .progress-level').css('width', newProgress + '%');
 });
-
-
-$('#surverys-link').click(function (e) { 
-  e.preventDefault();
-  window.location.href = './surverys.html'
-  
-});
