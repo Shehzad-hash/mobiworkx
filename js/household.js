@@ -89,3 +89,10 @@ $('.add-checks').click(function (e) {
   document.querySelector('input#age-1').checked = false;
   document.querySelector('input#age-2').checked = false;
 });
+
+$('.house-step').click(function (e) { 
+  e.preventDefault();
+  $('#step-1').css('display', 'none');
+  $('#step-3').css('display', 'none');
+  $('#step-2').css('display', 'block');
+});

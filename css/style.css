@@ -1558,7 +1558,7 @@ input:read-only {
 
 .closed-icon {
     float: right;
-    color: black;
+    color: black !important;
     margin-right: 2em;
     margin-top: -1.2em;
     position: relative;

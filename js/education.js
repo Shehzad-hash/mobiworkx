@@ -36,3 +36,9 @@ $('.edu-edit').click(function (e) {
   $('#step-2').css('display', 'none');
   $('#step-1').css('display', 'block');
 });
+
+$('#edu-step').click(function (e) { 
+  e.preventDefault();
+  $('#step-1').css('display', 'none');
+  $('#step-2').css('display', 'block');
+});

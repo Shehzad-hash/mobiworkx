@@ -210,3 +210,9 @@ window.intlTelInput(input, {
   separateDialCode: true,
   utilsScript: "build/js/utils.js",
 });
+
+$('#profile-2-link').click(function (e) { 
+  e.preventDefault();
+  window.location.href = './profile2.html'
+  
+});
