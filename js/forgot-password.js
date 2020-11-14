@@ -12,7 +12,8 @@ $('.forgot-password-page #reset-btn').click(function (e) {
         $('.error.forgot-pass').css('display', 'block');
         $('.error.forgot-pass-2').css('display', 'block');
     } else {
-        $('#forgot-pass').css('display', 'none');
-        $('#forgot-pass-2').css('display', 'block');
+        // $('#forgot-pass').css('display', 'none');
+        // $('#forgot-pass-2').css('display', 'block');
+        window.location.href  = './profile1.html'
     }
 });
