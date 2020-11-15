@@ -65,7 +65,7 @@
                             fixed conversion rate of 17,5:1
                         </p>
                         <div class="collapse-btn">
-                            <a class="link-btn" href="#">withdraw</a>
+                            <a id="airtime-btn" class="link-btn" href="#">withdraw</a>
                             <div class="withdrawal-amount">Minimum withdrawal amount is $4*</div>
                         </div>
                     </div>
@@ -96,9 +96,8 @@
                             <a class="collapse-link" href="#">www.paypal.com</a>
                         </p>
                         <p class="redeem-collapse-text">
-                            Note that this account needs to be
-                            registered to the same e-mail address
-                            as in the panel. PayPal charges a 2%
+                           <strong>IMPORTANT!</strong> Your MobiWorkX registered email address must be added to your PayPal account. <br> 
+                            PayPal charges a 2%
                             handling fee for transferring money to
                             your PayPal.
                         </p>
@@ -125,11 +124,11 @@
                             redeemable for thousands of rewards
                             including merchandise, gift cards, digital
                             magazines and books, travel, event
-                            tickets, mobile top-up and more!
+                            tickets and more!
                         </p>
                         <p class="redeem-collapse-text">
                             Your GCodes virtual gift code will be sent
-                            directly to your e-mail address normally
+                            directly to your email address normally
                             within 1 to 4 business days.
                         </p>
                         <p class="redeem-collapse-text">
@@ -137,13 +136,70 @@
                             to learn more.
                         </p>
                         <div class="collapse-btn">
-                            <a class="link-btn" href="#">withdraw</a>
+                            <a class="link-btn" href="#" id="gcodes-btn">withdraw</a>
                             <div class="withdrawal-amount">Minimum withdrawal amount is $4*</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+           <!-- Airtime modal start -->
+           <div class="location-modal" id="airtime-modal">
+            <div class="location" id="airtime-modal-1">
+                <h3>Confirm payout</h3>
+                <div class="location-text">
+                    This action cannot be undone
+                </div>
+                <div class="location-modal-buttons">
+                    <a class="location-modal-btn" href="#" id="airtime-confirm-btn">Confirm</a>
+                    <a class="location-modal-btn block mr-1 mr-md-4" href="redeem.html"
+                        id="location-model-next-button-two">Cancel</a>
+                </div>
+            </div>
+            <div class="location" id="airtime-modal-2">
+                <h3>Success!</h3>
+                <div class="airtime-modal-box">
+                    <img class="img-fluid" src="./img/airtime-img.png" alt=""><span class="airtime">Airtime</span>
+                </div>
+                <div class="location-text">
+                    Your reward request of $10 has been received!
+                </div>
+                <div class="location-modal-buttons">
+                    <a class="location-modal-btn" href="redeem.html" id="">Back to rewards</a>
+                </div>
+            </div>
+        </div>
+        <!-- Airtime modal end -->
+
+               <!-- Gcodes modal start -->
+               <div class="location-modal" id="gcodes-modal">
+                <div class="location" id="gcodes-modal-1">
+                    <h3>Confirm payout</h3>
+                    <div class="location-text">
+                        This action cannot be undone
+                    </div>
+                    <div class="location-modal-buttons">
+                        <a class="location-modal-btn" href="#" id="gcodes-confirm-btn">Confirm</a>
+                        <a class="location-modal-btn block mr-1 mr-md-4" href="redeem.html"
+                            id="location-model-next-button-two">Cancel</a>
+                    </div>
+                </div>
+                <div class="location" id="gcodes-modal-2">
+                    <h3>Success!</h3>
+                    <div class="airtime-modal-box">
+                        <img class="img-fluid" src="./img/gcodes-img.png" alt="">
+                    </div>
+                    <div class="location-text">
+                        Your reward request of $10 has been received!
+                    </div>
+                    <div class="location-modal-buttons">
+                        <a class="location-modal-btn" href="redeem.html" id="">Back to rewards</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Gcodes modal end -->
+
         <!-- Footer -->
         <div class="footer-links-media">
             <a class="social-link" href="surverys.html"><img src="./img/surveys.png" alt=""><br> Surveys</a>

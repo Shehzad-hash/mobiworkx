@@ -15,3 +15,25 @@ $('.accordion').click(function () {
     $(this).parent().find(".panel").toggleClass("active");
 
 })
+
+$('#airtime-btn').click(function (e) { 
+    e.preventDefault();
+    $('#airtime-modal').css('display', 'flex');
+});
+
+$('#airtime-confirm-btn').click(function (e) { 
+    e.preventDefault();
+    $('#airtime-modal-1').css('display', 'none');
+    $('#airtime-modal-2').css('display', 'block');
+});
+
+$('#gcodes-btn').click(function (e) { 
+    e.preventDefault();
+    $('#gcodes-modal').css('display', 'flex');
+});
+
+$('#gcodes-confirm-btn').click(function (e) { 
+    e.preventDefault();
+    $('#gcodes-modal-1').css('display', 'none');
+    $('#gcodes-modal-2').css('display', 'block');
+});
