@@ -1633,3 +1633,8 @@ input:read-only {
 #forgot-pass-2 .goto-link {
     text-decoration: underline !important;
 }
+
+/* Changes */
+.new-card-img {
+    height: 60px;
+}
