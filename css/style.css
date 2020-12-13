@@ -1635,6 +1635,8 @@ input:read-only {
 }
 
 /* Changes */
-.new-card-img {
-    height: 60px;
+.new-icon {
+    color: var(--theme-color);
+    font-size: 3.2em;
+    margin-bottom: 0.1em;
 }
