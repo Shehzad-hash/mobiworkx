@@ -1635,8 +1635,7 @@ input:read-only {
 }
 
 /* Changes */
-.new-icon {
-    color: var(--theme-color);
-    font-size: 3.2em;
-    margin-bottom: 0.1em;
+.new-image {
+    height: 55px;
+    filter: invert(55%) sepia(99%) saturate(1917%) hue-rotate(12deg) brightness(99%) contrast(100%);
 }
